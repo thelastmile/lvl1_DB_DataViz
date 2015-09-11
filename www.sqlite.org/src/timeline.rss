@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>SQLite</title>
+    <link>http://www.sqlite.org/src</link>
+    <description>SQLite</description>
+    <pubDate>Sun, 16 Aug 2015 22:02:40 GMT</pubDate>
+    <generator>Fossil version [f8e26879ac] 2015-07-27 16:16:36</generator>
+    <item>
+      <title>Fix off-by-one error when parsing primitive JSON types &quot;true&quot;, &quot;false&quot;, and
+&quot;null&quot;. (tags: json)</title>
+      <link>http://www.sqlite.org/src/info/42c15c1e36b5077646fef99028cf12e587a45023</link>
+      <description>Fix off-by-one error when parsing primitive JSON types &quot;true&quot;, &quot;false&quot;, and
+&quot;null&quot;. (tags: json)</description>
+      <pubDate>Sat, 15 Aug 2015 21:29:14 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/42c15c1e36b5077646fef99028cf12e587a45023</guid>
+    </item>
+    <item>
+      <title>Add a prototype JSON parser. (tags: json)</title>
+      <link>http://www.sqlite.org/src/info/789ba487000aa73621a41d115ad5de455ea8ea31</link>
+      <description>Add a prototype JSON parser. (tags: json)</description>
+      <pubDate>Sat, 15 Aug 2015 21:25:37 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/789ba487000aa73621a41d115ad5de455ea8ea31</guid>
+    </item>
+    <item>
+      <title>Handle writes to auto-vacuum databases within UNLOCKED transactions in the same way as for non-UNLOCKED transactions. (tags: experimental-begin-unlocked)</title>
+      <link>http://www.sqlite.org/src/info/de1ea450db33b140b11af5b801ea6a15875e774e</link>
+      <description>Handle writes to auto-vacuum databases within UNLOCKED transactions in the same way as for non-UNLOCKED transactions. (tags: experimental-begin-unlocked)</description>
+      <pubDate>Sat, 15 Aug 2015 18:16:46 GMT</pubDate>
+      <dc:creator>dan</dc:creator>
+      <guid>http://www.sqlite.org/src/info/de1ea450db33b140b11af5b801ea6a15875e774e</guid>
+    </item>
+    <item>
+      <title>Minor fix to the display of oversized KeyInfo structures in the P4 operand
+of Open opcodes in EXPLAIN output. (tags: trunk)</title>
+      <link>http://www.sqlite.org/src/info/f65a9b4ab2c6f0b7028e16e2a0f83fd6d58ae1cd</link>
+      <description>Minor fix to the display of oversized KeyInfo structures in the P4 operand
+of Open opcodes in EXPLAIN output. (tags: trunk)</description>
+      <pubDate>Sat, 15 Aug 2015 16:32:50 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/f65a9b4ab2c6f0b7028e16e2a0f83fd6d58ae1cd</guid>
+    </item>
+    <item>
+      <title>Change the display of the P4 operand of CursorHint in EXPLAIN output to
+function notation. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/bee73d429cb0e99b43fb191ac15e298d0353b135</link>
+      <description>Change the display of the P4 operand of CursorHint in EXPLAIN output to
+function notation. (tags: cursor-hints)</description>
+      <pubDate>Sat, 15 Aug 2015 00:51:23 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/bee73d429cb0e99b43fb191ac15e298d0353b135</guid>
+    </item>
+    <item>
+      <title>Always provide the BTREE_BULKLOAD hint, even when SQLITE_ENABLE_CURSOR_HINTS
+is not defined, as that hint gives a 4% performance increase. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/83a844357e132683ab3d88eee0fe32a8beeb6662</link>
+      <description>Always provide the BTREE_BULKLOAD hint, even when SQLITE_ENABLE_CURSOR_HINTS
+is not defined, as that hint gives a 4% performance increase. (tags: cursor-hints)</description>
+      <pubDate>Fri, 14 Aug 2015 23:57:04 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/83a844357e132683ab3d88eee0fe32a8beeb6662</guid>
+    </item>
+    <item>
+      <title>Updated testing of cursor-hints.  Remove the test_cursorhint.c file and
+associated logic in the core and do tests based purely on the newly enhanced
+EXPLAIN output. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/bf383e665a191a4f33a540d1240960a922e22813</link>
+      <description>Updated testing of cursor-hints.  Remove the test_cursorhint.c file and
+associated logic in the core and do tests based purely on the newly enhanced
+EXPLAIN output. (tags: cursor-hints)</description>
+      <pubDate>Fri, 14 Aug 2015 20:08:13 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/bf383e665a191a4f33a540d1240960a922e22813</guid>
+    </item>
+    <item>
+      <title>Fix the cursor hint mechanism so that it does the right thing for indexed
+lookups. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/581e3d4988e98975fea5daaeb9f854c54a4976b7</link>
+      <description>Fix the cursor hint mechanism so that it does the right thing for indexed
+lookups. (tags: cursor-hints)</description>
+      <pubDate>Fri, 14 Aug 2015 18:50:04 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/581e3d4988e98975fea5daaeb9f854c54a4976b7</guid>
+    </item>
+    <item>
+      <title>Refactor the sqlite3BtreeCursorHint() interface for improved maintainability. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/fc3fb5cd0d2c123a069e5b18b62bb1f708c8698a</link>
+      <description>Refactor the sqlite3BtreeCursorHint() interface for improved maintainability. (tags: cursor-hints)</description>
+      <pubDate>Fri, 14 Aug 2015 15:05:55 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/fc3fb5cd0d2c123a069e5b18b62bb1f708c8698a</guid>
+    </item>
+    <item>
+      <title>Duplicate the output of releasetest.tcl into releasetest-out.txt (tags: trunk)</title>
+      <link>http://www.sqlite.org/src/info/5e06a9c186f4b7478c73155613de219d702e0241</link>
+      <description>Duplicate the output of releasetest.tcl into releasetest-out.txt (tags: trunk)</description>
+      <pubDate>Fri, 14 Aug 2015 12:53:37 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/5e06a9c186f4b7478c73155613de219d702e0241</guid>
+    </item>
+    <item>
+      <title>Fix the CursorHint so that it includes the scan boundary constraints.
+On the expression text for the CursorHint opcode, show rowid correctly. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/f0d428d13a787251c2ca7685fec2a91b550eefba</link>
+      <description>Fix the CursorHint so that it includes the scan boundary constraints.
+On the expression text for the CursorHint opcode, show rowid correctly. (tags: cursor-hints)</description>
+      <pubDate>Fri, 14 Aug 2015 01:03:21 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/f0d428d13a787251c2ca7685fec2a91b550eefba</guid>
+    </item>
+    <item>
+      <title>Convert the hint expression of the CursorHint opcode into a string for
+display by EXPLAIN. (tags: cursor-hints-displayP4)</title>
+      <link>http://www.sqlite.org/src/info/12640cb22240ee436cad99360ceb9a208edd14f5</link>
+      <description>Convert the hint expression of the CursorHint opcode into a string for
+display by EXPLAIN. (tags: cursor-hints-displayP4)</description>
+      <pubDate>Thu, 13 Aug 2015 21:43:19 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/12640cb22240ee436cad99360ceb9a208edd14f5</guid>
+    </item>
+    <item>
+      <title>Fix a harmless compiler warning. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/608ab4ac1911d5f32a17ea043bd5f0748598691d</link>
+      <description>Fix a harmless compiler warning. (tags: cursor-hints)</description>
+      <pubDate>Thu, 13 Aug 2015 21:38:09 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/608ab4ac1911d5f32a17ea043bd5f0748598691d</guid>
+    </item>
+    <item>
+      <title>Convert the hint expression of the CursorHint opcode into a string for
+display by EXPLAIN. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/206884718782331a7aaacc2c811e4e9d2effae91</link>
+      <description>Convert the hint expression of the CursorHint opcode into a string for
+display by EXPLAIN. (tags: cursor-hints)</description>
+      <pubDate>Thu, 13 Aug 2015 21:32:41 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/206884718782331a7aaacc2c811e4e9d2effae91</guid>
+    </item>
+    <item>
+      <title>Fix a bug in sqlite3ExprContainsSubquery(). (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/be254715b5f56900e57ed57a179ca8d7bb68685d</link>
+      <description>Fix a bug in sqlite3ExprContainsSubquery(). (tags: cursor-hints)</description>
+      <pubDate>Thu, 13 Aug 2015 20:34:41 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/be254715b5f56900e57ed57a179ca8d7bb68685d</guid>
+    </item>
+    <item>
+      <title>When searching the wal file for a frame, do not search that part that was already checkpointed when the snapshot being read was at the head of the wal file. (tags: wal-read-change)</title>
+      <link>http://www.sqlite.org/src/info/90760e72327eb0593cbfa6d7058b554198cd8044</link>
+      <description>When searching the wal file for a frame, do not search that part that was already checkpointed when the snapshot being read was at the head of the wal file. (tags: wal-read-change)</description>
+      <pubDate>Thu, 13 Aug 2015 20:23:46 GMT</pubDate>
+      <dc:creator>dan</dc:creator>
+      <guid>http://www.sqlite.org/src/info/90760e72327eb0593cbfa6d7058b554198cd8044</guid>
+    </item>
+    <item>
+      <title>*MERGE* Merge in all the trunk changes from the previous year.  This breaks the
+cursor-hint mechanism, but provides a baseline for trouble-shooting. (tags: cursor-hints)</title>
+      <link>http://www.sqlite.org/src/info/82a7a61bc0883b1e7432548e4890791717aa1bb3</link>
+      <description>*MERGE* Merge in all the trunk changes from the previous year.  This breaks the
+cursor-hint mechanism, but provides a baseline for trouble-shooting. (tags: cursor-hints)</description>
+      <pubDate>Thu, 13 Aug 2015 20:07:13 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/82a7a61bc0883b1e7432548e4890791717aa1bb3</guid>
+    </item>
+    <item>
+      <title>Add the sqlite3rbu_savestate() function to the rbu extension. To force rbu to save its state to disk without closing the sqlite3rbu* handle. (tags: trunk)</title>
+      <link>http://www.sqlite.org/src/info/851a875ad6b81f90960caf4d03b116afc911858d</link>
+      <description>Add the sqlite3rbu_savestate() function to the rbu extension. To force rbu to save its state to disk without closing the sqlite3rbu* handle. (tags: trunk)</description>
+      <pubDate>Thu, 13 Aug 2015 18:26:09 GMT</pubDate>
+      <dc:creator>dan</dc:creator>
+      <guid>http://www.sqlite.org/src/info/851a875ad6b81f90960caf4d03b116afc911858d</guid>
+    </item>
+    <item>
+      <title>Experimental code (untested) for a JSONB datatype. (tags: json)</title>
+      <link>http://www.sqlite.org/src/info/e3596ac7b1dd5bde3f9cae5781a6806d8d9f7166</link>
+      <description>Experimental code (untested) for a JSONB datatype. (tags: json)</description>
+      <pubDate>Thu, 13 Aug 2015 13:54:59 GMT</pubDate>
+      <dc:creator>drh</dc:creator>
+      <guid>http://www.sqlite.org/src/info/e3596ac7b1dd5bde3f9cae5781a6806d8d9f7166</guid>
+    </item>
+    <item>
+      <title>Avoid invoking system call unlink() directly from RBU code. Use the xDelete method of the default VFS instead. (tags: trunk)</title>
+      <link>http://www.sqlite.org/src/info/ee966af8ff79189f8b90f3557dea21059517dfe2</link>
+      <description>Avoid invoking system call unlink() directly from RBU code. Use the xDelete method of the default VFS instead. (tags: trunk)</description>
+      <pubDate>Thu, 13 Aug 2015 11:46:21 GMT</pubDate>
+      <dc:creator>dan</dc:creator>
+      <guid>http://www.sqlite.org/src/info/ee966af8ff79189f8b90f3557dea21059517dfe2</guid>
+    </item>
+  </channel>
+</rss>

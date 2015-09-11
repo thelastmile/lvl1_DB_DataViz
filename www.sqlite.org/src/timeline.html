@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--<base href="http://www.sqlite.org/src/timeline">-->
+<title>SQLite: Timeline</title>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="timeline.rss">
+<link rel="stylesheet" href="style-id=d42fee49.css" type="text/css" media="screen">
+<style>.tl-node, .tl-node:after { border-radius: 50%; }</style></head>
+<body>
+<div class="header">
+  <div class="logo">
+    <img src="logo.gif" alt="logo" border="0">
+  </div>
+  <div class="title"><small>SQLite</small><br>Timeline</div>
+  <div class="status"><nobr>Not logged in</nobr><small><div id="clock">2015-08-16 22:01</div></small></div>
+</div>
+<div class="mainmenu"><a href="http://www.sqlite.org/">Home</a><a href="http://www.sqlite.org/src/tree?ci=trunk">Files</a><a href="http://www.sqlite.org/src/timeline?y=ci">Timeline</a><a href="http://www.sqlite.org/src/brlist">Branches</a><a href="http://www.sqlite.org/src/taglist">Tags</a><a href="http://www.sqlite.org/src/ticket">Tickets</a><a href="http://www.sqlite.org/src/wiki">Wiki</a><a href="https://www.sqlite.org/src/login">Login</a><a href="http://www.sqlite.org/src/sitemap">More...</a></div>
+<form id="f01" method="GET" action="/src/timeline"><div class="submenu">
+<a class="label" href="http://www.sqlite.org/src/timeline?n=50&b=2015-08-04+15:29:43">Older</a>
+<a class="label" href="http://www.sqlite.org/src/search?y=c">Search</a>
+<a class="label" href="http://www.sqlite.org/src/timeline?n=50&unhide">Unhide</a>
+<span class="submenuctrl">&nbsp;Max:<input type="text" name="n" size="4" maxlength="4" value="50"></span>
+<select class="submenuctrl" size="1" name="y" onchange="gebi(&quot;f01&quot;).submit();">
+<option value="all">Any Type</option>
+<option value="ci">Check-ins</option>
+<option value="g">Tags</option>
+<option value="e">Tech Notes</option>
+<option value="t">Tickets</option>
+<option value="w">Wiki</option>
+</select>
+<select class="submenuctrl" size="1" name="v" onchange="gebi(&quot;f01&quot;).submit();">
+<option value="1">With Files</option>
+<option value="0" selected="">Without Files</option>
+</select>
+</div>
+</form>
+<div class="content">
+
+
+<script type="text/javascript">
+  document.write=function() {};
+  document.writeln=function() {};
+</script>
+
+<script>
+function gebi(x){
+if(x.substr(0,1)=='#') x = x.substr(1);
+var e = document.getElementById(x);
+if(!e) throw new Error('Expecting element with ID '+x);
+else return e;}
+</script>
+<h2>50 most recent timeline items</h2>
+<table id="timelineTable" class="timelineTable">
+<tbody><tr><td>
+  <div class="divider timelineDate">2015-08-15</div>
+</td><td style="vertical-align: top;"><div class="tl-canvas" style="position: relative; width: 108px;"><div class="tl-line v" style="position: absolute; left: 5px; top: 4099px; width: 2px; height: 64px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 4095px;"></div><div class="tl-node merge" id="tln49" style="position: absolute; left: 0px; top: 4157px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 4173px; width: 2px; height: 190px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 4169px;"></div><div class="tl-line merge v" style="position: absolute; left: 85px; top: 4167px; width: 1px; height: 196px;"></div><div class="tl-line merge h" style="position: absolute; left: 14px; top: 4167px; width: 72px; height: 1px;"></div><div class="tl-arrow merge l" style="position: absolute; left: 12px; top: 4165px;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 4007px; width: 2px; height: 82px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 4003px;"></div><div class="tl-node" id="tln48" style="position: absolute; left: 0px; top: 4083px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3895px; width: 2px; height: 102px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3891px;"></div><div class="tl-node" id="tln47" style="position: absolute; left: 0px; top: 3991px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3839px; width: 2px; height: 46px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3835px;"></div><div class="tl-node" id="tln46" style="position: absolute; left: 0px; top: 3879px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3729px; width: 2px; height: 100px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3725px;"></div><div class="tl-node" id="tln45" style="position: absolute; left: 0px; top: 3823px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3655px; width: 2px; height: 64px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3651px;"></div><div class="tl-node" id="tln44" style="position: absolute; left: 0px; top: 3713px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3561px; width: 2px; height: 84px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3557px;"></div><div class="tl-node" id="tln43" style="position: absolute; left: 0px; top: 3639px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3449px; width: 2px; height: 102px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3445px;"></div><div class="tl-node" id="tln42" style="position: absolute; left: 0px; top: 3545px; z-index: 10;"></div><div class="tl-line h" style="position: absolute; left: 6px; top: 3550px; width: 81px; height: 2px; background-color: rgb(103, 128, 123);"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 3505px; width: 2px; height: 46px; background-color: rgb(103, 128, 123);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 3501px; border-bottom-color: rgb(103, 128, 123);"></div><div class="tl-node leaf" id="tln41" style="position: absolute; left: 80px; top: 3489px; background-color: rgb(173, 198, 193); z-index: 10;"></div><div class="tl-line merge h" style="position: absolute; left: 86px; top: 3491px; width: 16px; height: 1px;"></div><div class="tl-line merge v" style="position: absolute; left: 101px; top: 2273px; width: 1px; height: 1219px;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3209px; width: 2px; height: 230px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3205px;"></div><div class="tl-node" id="tln40" style="position: absolute; left: 0px; top: 3433px; z-index: 10;"></div><div class="tl-line h" style="position: absolute; left: 6px; top: 3438px; width: 81px; height: 2px; background-color: rgb(112, 122, 128);"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 3283px; width: 2px; height: 156px; background-color: rgb(112, 122, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 3279px; border-bottom-color: rgb(112, 122, 128);"></div><div class="tl-node leaf" id="tln39" style="position: absolute; left: 80px; top: 3267px; background-color: rgb(175, 185, 191); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3117px; width: 2px; height: 82px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3113px;"></div><div class="tl-node" id="tln38" style="position: absolute; left: 0px; top: 3193px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 3005px; width: 2px; height: 102px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 3001px;"></div><div class="tl-node" id="tln37" style="position: absolute; left: 0px; top: 3101px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 2799px; width: 2px; height: 196px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 2795px;"></div><div class="tl-node" id="tln36" style="position: absolute; left: 0px; top: 2989px; z-index: 10;"></div><div class="tl-line h" style="position: absolute; left: 6px; top: 2994px; width: 81px; height: 2px; background-color: rgb(128, 110, 121);"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2949px; width: 2px; height: 46px; background-color: rgb(128, 110, 121);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2945px; border-bottom-color: rgb(128, 110, 121);"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2855px; width: 2px; height: 84px; background-color: rgb(128, 110, 121);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2851px; border-bottom-color: rgb(128, 110, 121);"></div><div class="tl-node" id="tln35" style="position: absolute; left: 80px; top: 2933px; background-color: rgb(211, 193, 204); z-index: 10;"></div><div class="tl-node leaf" id="tln34" style="position: absolute; left: 80px; top: 2839px; background-color: rgb(211, 193, 204); z-index: 10;"></div><div class="tl-line merge v" style="position: absolute; left: 85px; top: 2793px; width: 1px; height: 49px;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 2279px; width: 2px; height: 510px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 2275px;"></div><div class="tl-node merge" id="tln33" style="position: absolute; left: 0px; top: 2783px; z-index: 10;"></div><div class="tl-line h" style="position: absolute; left: 6px; top: 2788px; width: 81px; height: 2px; background-color: rgb(92, 107, 128);"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2651px; width: 2px; height: 138px; background-color: rgb(92, 107, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2647px; border-bottom-color: rgb(92, 107, 128);"></div><div class="tl-line merge h" style="position: absolute; left: 14px; top: 2793px; width: 72px; height: 1px;"></div><div class="tl-arrow merge l" style="position: absolute; left: 12px; top: 2791px;"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2577px; width: 2px; height: 64px; background-color: rgb(92, 107, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2573px; border-bottom-color: rgb(92, 107, 128);"></div><div class="tl-node" id="tln32" style="position: absolute; left: 80px; top: 2635px; background-color: rgb(174, 189, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2465px; width: 2px; height: 102px; background-color: rgb(92, 107, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2461px; border-bottom-color: rgb(92, 107, 128);"></div><div class="tl-node" id="tln31" style="position: absolute; left: 80px; top: 2561px; background-color: rgb(174, 189, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2409px; width: 2px; height: 46px; background-color: rgb(92, 107, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2405px; border-bottom-color: rgb(92, 107, 128);"></div><div class="tl-node" id="tln30" style="position: absolute; left: 80px; top: 2449px; background-color: rgb(174, 189, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 2335px; width: 2px; height: 64px; background-color: rgb(92, 107, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 2331px; border-bottom-color: rgb(92, 107, 128);"></div><div class="tl-node" id="tln29" style="position: absolute; left: 80px; top: 2393px; background-color: rgb(174, 189, 210); z-index: 10;"></div><div class="tl-node leaf" id="tln28" style="position: absolute; left: 80px; top: 2319px; background-color: rgb(174, 189, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 2075px; width: 2px; height: 194px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 2071px;"></div><div class="tl-node merge" id="tln27" style="position: absolute; left: 0px; top: 2263px; z-index: 10;"></div><div class="tl-line merge h" style="position: absolute; left: 14px; top: 2273px; width: 88px; height: 1px;"></div><div class="tl-arrow merge l" style="position: absolute; left: 12px; top: 2271px;"></div><div class="tl-node leaf" id="tln26" style="position: absolute; left: 16px; top: 2207px; background-color: rgb(200, 193, 215); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 21px; top: 2223px; width: 2px; height: 2140px; background-color: rgb(113, 106, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 19px; top: 2219px; border-bottom-color: rgb(113, 106, 128);"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 2037px; width: 2px; height: 28px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 2033px;"></div><div class="tl-node" id="tln25" style="position: absolute; left: 0px; top: 2059px; z-index: 10;"></div><div class="tl-line h" style="position: absolute; left: 6px; top: 2064px; width: 17px; height: 2px; background-color: rgb(92, 109, 128);"></div><div class="tl-line v" style="position: absolute; left: 21px; top: 1981px; width: 2px; height: 84px; background-color: rgb(92, 109, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 19px; top: 1977px; border-bottom-color: rgb(92, 109, 128);"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 1739px; width: 2px; height: 288px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 1735px;"></div><div class="tl-node" id="tln24" style="position: absolute; left: 0px; top: 2021px; z-index: 10;"></div><div class="tl-line h" style="position: absolute; left: 6px; top: 2026px; width: 81px; height: 2px; background-color: rgb(128, 110, 91);"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 1869px; width: 2px; height: 158px; background-color: rgb(128, 110, 91);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 1865px; border-bottom-color: rgb(128, 110, 91);"></div><div class="tl-line v" style="position: absolute; left: 21px; top: 1943px; width: 2px; height: 28px; background-color: rgb(92, 109, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 19px; top: 1939px; border-bottom-color: rgb(92, 109, 128);"></div><div class="tl-node" id="tln23" style="position: absolute; left: 16px; top: 1965px; background-color: rgb(174, 191, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 21px; top: 1683px; width: 2px; height: 250px; background-color: rgb(92, 109, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 19px; top: 1679px; border-bottom-color: rgb(92, 109, 128);"></div><div class="tl-node" id="tln22" style="position: absolute; left: 16px; top: 1927px; background-color: rgb(174, 191, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 85px; top: 1335px; width: 2px; height: 524px; background-color: rgb(128, 110, 91);"></div><div class="tl-arrow u" style="position: absolute; left: 83px; top: 1331px; border-bottom-color: rgb(128, 110, 91);"></div><div class="tl-node" id="tln21" style="position: absolute; left: 80px; top: 1853px; background-color: rgb(215, 197, 178); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 1573px; width: 2px; height: 156px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 1569px;"></div><div class="tl-node" id="tln20" style="position: absolute; left: 0px; top: 1723px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 21px; top: 133px; width: 2px; height: 1540px; background-color: rgb(92, 109, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 19px; top: 129px; border-bottom-color: rgb(92, 109, 128);"></div><div class="tl-node" id="tln19" style="position: absolute; left: 16px; top: 1667px; background-color: rgb(174, 191, 210); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 853px; width: 2px; height: 710px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 849px;"></div><div class="tl-node" id="tln18" style="position: absolute; left: 0px; top: 1557px; z-index: 10;"></div><div class="tl-line merge v" style="position: absolute; left: 9px; top: 1457px; width: 1px; height: 106px;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 1279px; width: 2px; height: 174px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 1275px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node merge" id="tln17" style="position: absolute; left: 32px; top: 1447px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 1463px; width: 2px; height: 2900px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 1459px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-line merge h" style="position: absolute; left: 9px; top: 1457px; width: 21px; height: 1px;"></div><div class="tl-arrow merge r" style="position: absolute; left: 29px; top: 1455px;"></div><div class="tl-node leaf" id="tln16" style="position: absolute; left: 80px; top: 1319px; background-color: rgb(215, 197, 178); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 1205px; width: 2px; height: 64px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 1201px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln15" style="position: absolute; left: 32px; top: 1263px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 1149px; width: 2px; height: 46px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 1145px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln14" style="position: absolute; left: 32px; top: 1189px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 909px; width: 2px; height: 230px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 905px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln13" style="position: absolute; left: 32px; top: 1133px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-node leaf" id="tln12" style="position: absolute; left: 48px; top: 1041px; background-color: rgb(210, 196, 157); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 53px; top: 1057px; width: 2px; height: 3306px; background-color: rgb(128, 114, 75);"></div><div class="tl-arrow u" style="position: absolute; left: 51px; top: 1053px; border-bottom-color: rgb(128, 114, 75);"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 779px; width: 2px; height: 120px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 775px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln11" style="position: absolute; left: 32px; top: 893px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 5px; top: 281px; width: 2px; height: 562px;"></div><div class="tl-arrow u" style="position: absolute; left: 3px; top: 277px;"></div><div class="tl-node" id="tln10" style="position: absolute; left: 0px; top: 837px; z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 705px; width: 2px; height: 64px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 701px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln9" style="position: absolute; left: 32px; top: 763px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 595px; width: 2px; height: 100px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 591px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln8" style="position: absolute; left: 32px; top: 689px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 485px; width: 2px; height: 100px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 481px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln7" style="position: absolute; left: 32px; top: 579px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 37px; top: 373px; width: 2px; height: 102px; background-color: rgb(128, 95, 96);"></div><div class="tl-arrow u" style="position: absolute; left: 35px; top: 369px; border-bottom-color: rgb(128, 95, 96);"></div><div class="tl-node" id="tln6" style="position: absolute; left: 32px; top: 469px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-node leaf" id="tln5" style="position: absolute; left: 32px; top: 357px; background-color: rgb(196, 163, 164); z-index: 10;"></div><div class="tl-node leaf" id="tln4" style="position: absolute; left: 0px; top: 265px; z-index: 10;"></div><div class="tl-node leaf" id="tln3" style="position: absolute; left: 64px; top: 155px; background-color: rgb(165, 207, 168); z-index: 10;"></div><div class="tl-line v" style="position: absolute; left: 69px; top: 171px; width: 2px; height: 4192px; background-color: rgb(86, 128, 89);"></div><div class="tl-arrow u" style="position: absolute; left: 67px; top: 167px; border-bottom-color: rgb(86, 128, 89);"></div><div class="tl-line v" style="position: absolute; left: 21px; top: 59px; width: 2px; height: 64px; background-color: rgb(92, 109, 128);"></div><div class="tl-arrow u" style="position: absolute; left: 19px; top: 55px; border-bottom-color: rgb(92, 109, 128);"></div><div class="tl-node" id="tln2" style="position: absolute; left: 16px; top: 117px; background-color: rgb(174, 191, 210); z-index: 10;"></div><div class="tl-node leaf" id="tln1" style="position: absolute; left: 16px; top: 43px; background-color: rgb(174, 191, 210); z-index: 10;"></div></div></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a1" href="http://www.sqlite.org/src/timeline?c=42c15c1e36b50776&unhide">21:29</a></td>
+<td class="timelineGraph">
+<div id="m1" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebfd2;">
+<a class="timelineHistLink" id="a2" href="http://www.sqlite.org/src/info/42c15c1e36b50776">[42c15c1e]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Fix off-by-one error when parsing primitive JSON types "true", "false", and
+"null".
+</span>
+(user: <a id="a3" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-15+21%3A29%3A14&nd&n=200">drh</a>,
+tags: <a id="a4" href="http://www.sqlite.org/src/timeline?r=json&nd&c=2015-08-15+21%3A29%3A14&n=200">json</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a5" href="http://www.sqlite.org/src/timeline?c=789ba487000aa736&unhide">21:25</a></td>
+<td class="timelineGraph">
+<div id="m2" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebfd2;">
+<a class="timelineHistLink" id="a6" href="http://www.sqlite.org/src/info/789ba487000aa736">[789ba487]</a>
+<span class="timelineComment">Add a prototype JSON parser.
+</span>
+(user: <a id="a7" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-15+21%3A25%3A37&nd&n=200">drh</a>,
+tags: <a id="a8" href="http://www.sqlite.org/src/timeline?r=json&nd&c=2015-08-15+21%3A25%3A37&n=200">json</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a9" href="http://www.sqlite.org/src/timeline?c=de1ea450db33b140&unhide">18:16</a></td>
+<td class="timelineGraph">
+<div id="m3" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #a5cfa8;">
+<a class="timelineHistLink" id="a10" href="http://www.sqlite.org/src/info/de1ea450db33b140">[de1ea450]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Handle writes to auto-vacuum databases within UNLOCKED transactions in the same way as for non-UNLOCKED transactions.
+</span>
+(user: <a id="a11" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-15+18%3A16%3A46&nd&n=200">dan</a>,
+tags: <a id="a12" href="http://www.sqlite.org/src/timeline?r=experimental-begin-unlocked&nd&c=2015-08-15+18%3A16%3A46&n=200">experimental-begin-unlocked</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a13" href="http://www.sqlite.org/src/timeline?c=f65a9b4ab2c6f0b7&unhide">16:32</a></td>
+<td class="timelineGraph">
+<div id="m4" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a14" href="http://www.sqlite.org/src/info/f65a9b4ab2c6f0b7">[f65a9b4a]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Minor fix to the display of oversized KeyInfo structures in the P4 operand
+of Open opcodes in EXPLAIN output.
+</span>
+(user: <a id="a15" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-15+16%3A32%3A50&nd&n=200">drh</a>,
+tags: <a id="a16" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-15+16%3A32%3A50&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a17" href="http://www.sqlite.org/src/timeline?c=bee73d429cb0e99b&unhide">00:51</a></td>
+<td class="timelineGraph">
+<div id="m5" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a18" href="http://www.sqlite.org/src/info/bee73d429cb0e99b">[bee73d42]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Change the display of the P4 operand of CursorHint in EXPLAIN output to
+function notation.
+</span>
+(user: <a id="a19" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-15+00%3A51%3A23&nd&n=200">drh</a>,
+tags: <a id="a20" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-15+00%3A51%3A23&n=200">cursor-hints</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-14</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a21" href="http://www.sqlite.org/src/timeline?c=83a844357e132683&unhide">23:57</a></td>
+<td class="timelineGraph">
+<div id="m6" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a22" href="http://www.sqlite.org/src/info/83a844357e132683">[83a84435]</a>
+<span class="timelineComment">Always provide the BTREE_BULKLOAD hint, even when SQLITE_ENABLE_CURSOR_HINTS
+is not defined, as that hint gives a 4% performance increase.
+</span>
+(user: <a id="a23" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-14+23%3A57%3A04&nd&n=200">drh</a>,
+tags: <a id="a24" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-14+23%3A57%3A04&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a25" href="http://www.sqlite.org/src/timeline?c=bf383e665a191a4f&unhide">20:08</a></td>
+<td class="timelineGraph">
+<div id="m7" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a26" href="http://www.sqlite.org/src/info/bf383e665a191a4f">[bf383e66]</a>
+<span class="timelineComment">Updated testing of cursor-hints.  Remove the test_cursorhint.c file and
+associated logic in the core and do tests based purely on the newly enhanced
+EXPLAIN output.
+</span>
+(user: <a id="a27" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-14+20%3A08%3A13&nd&n=200">drh</a>,
+tags: <a id="a28" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-14+20%3A08%3A13&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a29" href="http://www.sqlite.org/src/timeline?c=581e3d4988e98975&unhide">18:50</a></td>
+<td class="timelineGraph">
+<div id="m8" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a30" href="http://www.sqlite.org/src/info/581e3d4988e98975">[581e3d49]</a>
+<span class="timelineComment">Fix the cursor hint mechanism so that it does the right thing for indexed
+lookups.
+</span>
+(user: <a id="a31" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-14+18%3A50%3A04&nd&n=200">drh</a>,
+tags: <a id="a32" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-14+18%3A50%3A04&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a33" href="http://www.sqlite.org/src/timeline?c=fc3fb5cd0d2c123a&unhide">15:05</a></td>
+<td class="timelineGraph">
+<div id="m9" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a34" href="http://www.sqlite.org/src/info/fc3fb5cd0d2c123a">[fc3fb5cd]</a>
+<span class="timelineComment">Refactor the sqlite3BtreeCursorHint() interface for improved maintainability.
+</span>
+(user: <a id="a35" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-14+15%3A05%3A55&nd&n=200">drh</a>,
+tags: <a id="a36" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-14+15%3A05%3A55&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a37" href="http://www.sqlite.org/src/timeline?c=5e06a9c186f4b747&unhide">12:53</a></td>
+<td class="timelineGraph">
+<div id="m10" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a38" href="http://www.sqlite.org/src/info/5e06a9c186f4b747">[5e06a9c1]</a>
+<span class="timelineComment">Duplicate the output of releasetest.tcl into releasetest-out.txt
+</span>
+(user: <a id="a39" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-14+12%3A53%3A37&nd&n=200">drh</a>,
+tags: <a id="a40" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-14+12%3A53%3A37&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a41" href="http://www.sqlite.org/src/timeline?c=f0d428d13a787251&unhide">01:03</a></td>
+<td class="timelineGraph">
+<div id="m11" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a42" href="http://www.sqlite.org/src/info/f0d428d13a787251">[f0d428d1]</a>
+<span class="timelineComment">Fix the CursorHint so that it includes the scan boundary constraints.
+On the expression text for the CursorHint opcode, show rowid correctly.
+</span>
+(user: <a id="a43" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-14+01%3A03%3A21&nd&n=200">drh</a>,
+tags: <a id="a44" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-14+01%3A03%3A21&n=200">cursor-hints</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-13</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a45" href="http://www.sqlite.org/src/timeline?c=12640cb22240ee43&unhide">21:43</a></td>
+<td class="timelineGraph">
+<div id="m12" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #d2c49d;">
+<a class="timelineHistLink" id="a46" href="http://www.sqlite.org/src/info/12640cb22240ee43">[12640cb2]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Convert the hint expression of the CursorHint opcode into a string for
+display by EXPLAIN.
+</span>
+(user: <a id="a47" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-13+21%3A43%3A19&nd&n=200">drh</a>,
+tags: <a id="a48" href="http://www.sqlite.org/src/timeline?r=cursor-hints-displayP4&nd&c=2015-08-13+21%3A43%3A19&n=200">cursor-hints-displayP4</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a49" href="http://www.sqlite.org/src/timeline?c=608ab4ac1911d5f3&unhide">21:38</a></td>
+<td class="timelineGraph">
+<div id="m13" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a50" href="http://www.sqlite.org/src/info/608ab4ac1911d5f3">[608ab4ac]</a>
+<span class="timelineComment">Fix a harmless compiler warning.
+</span>
+(user: <a id="a51" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-13+21%3A38%3A09&nd&n=200">drh</a>,
+tags: <a id="a52" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-13+21%3A38%3A09&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a53" href="http://www.sqlite.org/src/timeline?c=206884718782331a&unhide">21:32</a></td>
+<td class="timelineGraph">
+<div id="m14" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a54" href="http://www.sqlite.org/src/info/206884718782331a">[20688471]</a>
+<span class="timelineComment">Convert the hint expression of the CursorHint opcode into a string for
+display by EXPLAIN.
+</span>
+(user: <a id="a55" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-13+21%3A32%3A41&nd&n=200">drh</a>,
+tags: <a id="a56" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-13+21%3A32%3A41&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a57" href="http://www.sqlite.org/src/timeline?c=be254715b5f56900&unhide">20:34</a></td>
+<td class="timelineGraph">
+<div id="m15" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a58" href="http://www.sqlite.org/src/info/be254715b5f56900">[be254715]</a>
+<span class="timelineComment">Fix a bug in sqlite3ExprContainsSubquery().
+</span>
+(user: <a id="a59" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-13+20%3A34%3A41&nd&n=200">drh</a>,
+tags: <a id="a60" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-13+20%3A34%3A41&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a61" href="http://www.sqlite.org/src/timeline?c=90760e72327eb059&unhide">20:23</a></td>
+<td class="timelineGraph">
+<div id="m16" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #d7c5b2;">
+<a class="timelineHistLink" id="a62" href="http://www.sqlite.org/src/info/90760e72327eb059">[90760e72]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">When searching the wal file for a frame, do not search that part that was already checkpointed when the snapshot being read was at the head of the wal file.
+</span>
+(user: <a id="a63" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-13+20%3A23%3A46&nd&n=200">dan</a>,
+tags: <a id="a64" href="http://www.sqlite.org/src/timeline?r=wal-read-change&nd&c=2015-08-13+20%3A23%3A46&n=200">wal-read-change</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a65" href="http://www.sqlite.org/src/timeline?c=82a7a61bc0883b1e&unhide">20:07</a></td>
+<td class="timelineGraph">
+<div id="m17" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c4a3a4;">
+<a class="timelineHistLink" id="a66" href="http://www.sqlite.org/src/info/82a7a61bc0883b1e">[82a7a61b]</a>
+<span class="timelineComment">Merge in all the trunk changes from the previous year.  This breaks the
+cursor-hint mechanism, but provides a baseline for trouble-shooting.
+</span>
+(user: <a id="a67" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-13+20%3A07%3A13&nd&n=200">drh</a>,
+tags: <a id="a68" href="http://www.sqlite.org/src/timeline?r=cursor-hints&nd&c=2015-08-13+20%3A07%3A13&n=200">cursor-hints</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a69" href="http://www.sqlite.org/src/timeline?c=851a875ad6b81f90&unhide">18:26</a></td>
+<td class="timelineGraph">
+<div id="m18" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a70" href="http://www.sqlite.org/src/info/851a875ad6b81f90">[851a875a]</a>
+<span class="timelineComment">Add the sqlite3rbu_savestate() function to the rbu extension. To force rbu to save its state to disk without closing the sqlite3rbu* handle.
+</span>
+(user: <a id="a71" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-13+18%3A26%3A09&nd&n=200">dan</a>,
+tags: <a id="a72" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-13+18%3A26%3A09&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a73" href="http://www.sqlite.org/src/timeline?c=e3596ac7b1dd5bde&unhide">13:54</a></td>
+<td class="timelineGraph">
+<div id="m19" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebfd2;">
+<a class="timelineHistLink" id="a74" href="http://www.sqlite.org/src/info/e3596ac7b1dd5bde">[e3596ac7]</a>
+<span class="timelineComment">Experimental code (untested) for a JSONB datatype.
+</span>
+(user: <a id="a75" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-13+13%3A54%3A59&nd&n=200">drh</a>,
+tags: <a id="a76" href="http://www.sqlite.org/src/timeline?r=json&nd&c=2015-08-13+13%3A54%3A59&n=200">json</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a77" href="http://www.sqlite.org/src/timeline?c=ee966af8ff79189f&unhide">11:46</a></td>
+<td class="timelineGraph">
+<div id="m20" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a78" href="http://www.sqlite.org/src/info/ee966af8ff79189f">[ee966af8]</a>
+<span class="timelineComment">Avoid invoking system call unlink() directly from RBU code. Use the xDelete method of the default VFS instead.
+</span>
+(user: <a id="a79" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-13+11%3A46%3A21&nd&n=200">dan</a>,
+tags: <a id="a80" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-13+11%3A46%3A21&n=200">trunk</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-12</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a81" href="http://www.sqlite.org/src/timeline?c=5669ac4a40429abc&unhide">19:42</a></td>
+<td class="timelineGraph">
+<div id="m21" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #d7c5b2;">
+<a class="timelineHistLink" id="a82" href="http://www.sqlite.org/src/info/5669ac4a40429abc">[5669ac4a]</a>
+<span class="timelineComment">Avoid reading frames that have already been checkpointed from the wal file.
+</span>
+(user: <a id="a83" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-12+19%3A42%3A08&nd&n=200">dan</a>,
+tags: <a id="a84" href="http://www.sqlite.org/src/timeline?r=wal-read-change&nd&c=2015-08-12+19%3A42%3A08&n=200">wal-read-change</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a85" href="http://www.sqlite.org/src/timeline?c=414a95f3b79359f1&unhide">17:23</a></td>
+<td class="timelineGraph">
+<div id="m22" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebfd2;">
+<a class="timelineHistLink" id="a86" href="http://www.sqlite.org/src/info/414a95f3b79359f1">[414a95f3]</a>
+<span class="timelineComment">Add the json_object() function.
+</span>
+(user: <a id="a87" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-12+17%3A23%3A34&nd&n=200">drh</a>,
+tags: <a id="a88" href="http://www.sqlite.org/src/timeline?r=json&nd&c=2015-08-12+17%3A23%3A34&n=200">json</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a89" href="http://www.sqlite.org/src/timeline?c=dde8afdd8dba1d92&unhide">16:49</a></td>
+<td class="timelineGraph">
+<div id="m23" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebfd2;">
+<a class="timelineHistLink" id="a90" href="http://www.sqlite.org/src/info/dde8afdd8dba1d92">[dde8afdd]</a>
+<span class="timelineComment">Begin adding an extension that provides JSON SQL functions.
+</span>
+(user: <a id="a91" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-12+16%3A49%3A40&nd&n=200">drh</a>,
+tags: <a id="a92" href="http://www.sqlite.org/src/timeline?r=json&nd&c=2015-08-12+16%3A49%3A40&n=200">json</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a93" href="http://www.sqlite.org/src/timeline?c=efb7c9c5d0015c8c&unhide">15:36</a></td>
+<td class="timelineGraph">
+<div id="m24" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a94" href="http://www.sqlite.org/src/info/efb7c9c5d0015c8c">[efb7c9c5]</a>
+<span class="timelineComment">Minor optimization for fts5 API xInst().
+</span>
+(user: <a id="a95" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-12+15%3A36%3A58&nd&n=200">dan</a>,
+tags: <a id="a96" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-12+15%3A36%3A58&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a97" href="http://www.sqlite.org/src/timeline?c=f768243527841982&unhide">12:11</a></td>
+<td class="timelineGraph">
+<div id="m25" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a98" href="http://www.sqlite.org/src/info/f768243527841982">[f7682435]</a>
+<span class="timelineComment">Add the xPhraseFirst() and xPhraseNext() fts5 APIs, for faster iteration through a single phrases position list. Also optimize xInst() and xInstCount() a bit.
+</span>
+(user: <a id="a99" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-12+12%3A11%3A28&nd&n=200">dan</a>,
+tags: <a id="a100" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-12+12%3A11%3A28&n=200">trunk</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-11</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a101" href="http://www.sqlite.org/src/timeline?c=600df309fc547db3&unhide">18:18</a></td>
+<td class="timelineGraph">
+<div id="m26" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #c8c1d7;">
+<a class="timelineHistLink" id="a102" href="http://www.sqlite.org/src/info/600df309fc547db3">[600df309]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Fix the retry mechanism on file locks.
+</span>
+(user: <a id="a103" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-11+18%3A18%3A24&nd&n=200">drh</a>,
+tags: <a id="a104" href="http://www.sqlite.org/src/timeline?r=apple-osx&nd&c=2015-08-11+18%3A18%3A24&n=200">apple-osx</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a105" href="http://www.sqlite.org/src/timeline?c=61cb2fc6c1281086&unhide">14:25</a></td>
+<td class="timelineGraph">
+<div id="m27" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a106" href="http://www.sqlite.org/src/info/61cb2fc6c1281086">[61cb2fc6]</a>
+<span class="timelineComment">Merge fixes from the fts5NoWarn branch.
+</span>
+(user: <a id="a107" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-11+14%3A25%3A34&nd&n=200">dan</a>,
+tags: <a id="a108" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-11+14%3A25%3A34&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a109" href="http://www.sqlite.org/src/timeline?c=b09e3ea7b86ff65d&unhide">13:41</a></td>
+<td class="timelineGraph">
+<div id="m28" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebdd2;">
+<a class="timelineHistLink" id="a110" href="http://www.sqlite.org/src/info/b09e3ea7b86ff65d">[b09e3ea7]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Add some extra timestamps to the experimental log output.
+</span>
+(user: <a id="a111" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-11+13%3A41%3A44&nd&n=200">dan</a>,
+tags: <a id="a112" href="http://www.sqlite.org/src/timeline?r=experimentalIoLog&nd&c=2015-08-11+13%3A41%3A44&n=200">experimentalIoLog</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a113" href="http://www.sqlite.org/src/timeline?c=e844304de7c7d50c&unhide">10:59</a></td>
+<td class="timelineGraph">
+<div id="m29" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebdd2;">
+<a class="timelineHistLink" id="a114" href="http://www.sqlite.org/src/info/e844304de7c7d50c">[e844304d]</a>
+<span class="timelineComment">Add a tcl interface for the experimental logging functionality.
+</span>
+(user: <a id="a115" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-11+10%3A59%3A10&nd&n=200">dan</a>,
+tags: <a id="a116" href="http://www.sqlite.org/src/timeline?r=experimentalIoLog&nd&c=2015-08-11+10%3A59%3A10&n=200">experimentalIoLog</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a117" href="http://www.sqlite.org/src/timeline?c=56ff336e0ae258f4&unhide">01:45</a></td>
+<td class="timelineGraph">
+<div id="m30" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebdd2;">
+<a class="timelineHistLink" id="a118" href="http://www.sqlite.org/src/info/56ff336e0ae258f4">[56ff336e]</a>
+<span class="timelineComment">Two more places where logging of freelist trunk pages is needed.
+</span>
+(user: <a id="a119" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-11+01%3A45%3A40&nd&n=200">drh</a>,
+tags: <a id="a120" href="http://www.sqlite.org/src/timeline?r=experimentalIoLog&nd&c=2015-08-11+01%3A45%3A40&n=200">experimentalIoLog</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-10</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a121" href="http://www.sqlite.org/src/timeline?c=bb5d7782bdc73748&unhide">20:53</a></td>
+<td class="timelineGraph">
+<div id="m31" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebdd2;">
+<a class="timelineHistLink" id="a122" href="http://www.sqlite.org/src/info/bb5d7782bdc73748">[bb5d7782]</a>
+<span class="timelineComment">Record when an allocated page is taken from the freelist trunk.
+</span>
+(user: <a id="a123" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-10+20%3A53%3A22&nd&n=200">drh</a>,
+tags: <a id="a124" href="http://www.sqlite.org/src/timeline?r=experimentalIoLog&nd&c=2015-08-10+20%3A53%3A22&n=200">experimentalIoLog</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a125" href="http://www.sqlite.org/src/timeline?c=ac5d2e9d760bb376&unhide">20:22</a></td>
+<td class="timelineGraph">
+<div id="m32" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #aebdd2;">
+<a class="timelineHistLink" id="a126" href="http://www.sqlite.org/src/info/ac5d2e9d760bb376">[ac5d2e9d]</a>
+<span class="timelineComment">Add the sqlite3_experimental_log_open() interface.  This is for diagnostic
+use only and is not intended to ever go on trunk.
+</span>
+(user: <a id="a127" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-10+20%3A22%3A07&nd&n=200">drh</a>,
+tags: <a id="a128" href="http://www.sqlite.org/src/timeline?r=experimentalIoLog&nd&c=2015-08-10+20%3A22%3A07&n=200">experimentalIoLog</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-08</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a129" href="http://www.sqlite.org/src/timeline?c=fd5608fb20831f1f&unhide">23:30</a></td>
+<td class="timelineGraph">
+<div id="m33" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a130" href="http://www.sqlite.org/src/info/fd5608fb20831f1f">[fd5608fb]</a>
+<span class="timelineComment">Fix compiler warnings and remove unreachable code.
+</span>
+(user: <a id="a131" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-08+23%3A30%3A56&nd&n=200">drh</a>,
+tags: <a id="a132" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-08+23%3A30%3A56&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a133" href="http://www.sqlite.org/src/timeline?c=962b6cd6bbc1ef82&unhide">23:23</a></td>
+<td class="timelineGraph">
+<div id="m34" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #d3c1cc;">
+<a class="timelineHistLink" id="a134" href="http://www.sqlite.org/src/info/962b6cd6bbc1ef82">[962b6cd6]</a>
+<span class="timelineLeaf">Closed-Leaf:</span>
+<span class="timelineComment">Fix an assert() that was in the wrong spot.
+</span>
+(user: <a id="a135" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-08+23%3A23%3A33&nd&n=200">drh</a>,
+tags: <a id="a136" href="http://www.sqlite.org/src/timeline?r=warnings&nd&c=2015-08-08+23%3A23%3A33&n=200">warnings</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a137" href="http://www.sqlite.org/src/timeline?c=8d92b57b6dcd7704&unhide">22:48</a></td>
+<td class="timelineGraph">
+</td>
+<td class="timelineTableCell">
+•
+Edit <a id="a138" href="http://www.sqlite.org/src/info/be190fe7826d157f">[be190fe7]</a>: Move to branch <a href="http://www.sqlite.org/src/timeline?r=warnings&nd&dp=be190fe7826d157f&unhide">warnings</a>...
+(user: <a id="a139" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-08+22%3A48%3A29&nd&n=200">drh</a>)
+[<a id="a140" href="http://www.sqlite.org/src/info/8d92b57b6dcd7704">details</a>]
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a141" href="http://www.sqlite.org/src/timeline?c=be190fe7826d157f&unhide">22:47</a></td>
+<td class="timelineGraph">
+<div id="m35" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #d3c1cc;">
+<a class="timelineHistLink" id="a142" href="http://www.sqlite.org/src/info/be190fe7826d157f">[be190fe7]</a>
+<span class="timelineComment">Fix compiler warnings and remove unreachable code.
+</span>
+(user: <a id="a143" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-08+22%3A47%3A47&nd&n=200">drh</a>,
+tags: <a id="a144" href="http://www.sqlite.org/src/timeline?r=warnings&nd&c=2015-08-08+22%3A47%3A47&n=200">warnings</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a145" href="http://www.sqlite.org/src/timeline?c=1d75a41bb2f7fcd3&unhide">15:13</a></td>
+<td class="timelineGraph">
+<div id="m36" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a146" href="http://www.sqlite.org/src/info/1d75a41bb2f7fcd3">[1d75a41b]</a>
+<span class="timelineComment">Update RBU to avoid repreparing a statement immediately after it is prepared.
+</span>
+(user: <a id="a147" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-08+15%3A13%3A08&nd&n=200">dan</a>,
+tags: <a id="a148" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-08+15%3A13%3A08&n=200">trunk</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-07</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a149" href="http://www.sqlite.org/src/timeline?c=065765902d2774d7&unhide">20:57</a></td>
+<td class="timelineGraph">
+<div id="m37" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a150" href="http://www.sqlite.org/src/info/065765902d2774d7">[06576590]</a>
+<span class="timelineComment">Enhance the query planner so that it is able to use partial indexes that use
+AND-connected terms in the WHERE clause.
+</span>
+(user: <a id="a151" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-07+20%3A57%3A00&nd&n=200">drh</a>,
+tags: <a id="a152" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-07+20%3A57%3A00&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a153" href="http://www.sqlite.org/src/timeline?c=6d47b35ad10e85f2&unhide">20:06</a></td>
+<td class="timelineGraph">
+<div id="m38" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a154" href="http://www.sqlite.org/src/info/6d47b35ad10e85f2">[6d47b35a]</a>
+<span class="timelineComment">Add a specially formatted comment to shell.c to make it easier for scripts to edit. No code changes.
+</span>
+(user: <a id="a155" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-07+20%3A06%3A14&nd&n=200">dan</a>,
+tags: <a id="a156" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-07+20%3A06%3A14&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a157" href="http://www.sqlite.org/src/timeline?c=3a82c8e6cb7227fe&unhide">09:42</a></td>
+<td class="timelineGraph">
+<div id="m39" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #afb9bf;">
+<a class="timelineHistLink" id="a158" href="http://www.sqlite.org/src/info/3a82c8e6cb7227fe">[3a82c8e6]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Within a write-transaction on a wal database in mmap mode, check the page-cache for an entry before the wal file. This can be faster if the wal file is very large.
+</span>
+(user: <a id="a159" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-07+09%3A42%3A12&nd&n=200">dan</a>,
+tags: <a id="a160" href="http://www.sqlite.org/src/timeline?r=mmap-wal-bigtrans&nd&c=2015-08-07+09%3A42%3A12&n=200">mmap-wal-bigtrans</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-06</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a161" href="http://www.sqlite.org/src/timeline?c=e596a6b63f3a18c2&unhide">12:54</a></td>
+<td class="timelineGraph">
+<div id="m40" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a162" href="http://www.sqlite.org/src/info/e596a6b63f3a18c2">[e596a6b6]</a>
+<span class="timelineComment">increase the version number to 3.8.12
+</span>
+(user: <a id="a163" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-06+12%3A54%3A13&nd&n=200">drh</a>,
+tags: <a id="a164" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-06+12%3A54%3A13&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a165" href="http://www.sqlite.org/src/timeline?c=0ddb2532b2daaaf1&unhide">03:19</a></td>
+<td class="timelineGraph">
+<div id="m41" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell" style="background-color: #adc6c1;">
+<a class="timelineHistLink" id="a166" href="http://www.sqlite.org/src/info/0ddb2532b2daaaf1">[0ddb2532]</a>
+<span class="timelineLeaf">Leaf:</span>
+<span class="timelineComment">Fix harmless compiler warnings in FTS5 code.
+</span>
+(user: <a id="a167" href="http://www.sqlite.org/src/timeline?u=mistachkin&c=2015-08-06+03%3A19%3A14&nd&n=200">mistachkin</a>,
+tags: <a id="a168" href="http://www.sqlite.org/src/timeline?r=fts5NoWarn&nd&c=2015-08-06+03%3A19%3A14&n=200">fts5NoWarn</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a169" href="http://www.sqlite.org/src/timeline?c=483ebe8989ed7dbe&unhide">03:09</a></td>
+<td class="timelineGraph">
+<div id="m42" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a170" href="http://www.sqlite.org/src/info/483ebe8989ed7dbe">[483ebe89]</a>
+<span class="timelineComment">Fix duplicate test numbering in the FTS5 matchinfo tests.
+</span>
+(user: <a id="a171" href="http://www.sqlite.org/src/timeline?u=mistachkin&c=2015-08-06+03%3A09%3A49&nd&n=200">mistachkin</a>,
+tags: <a id="a172" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-06+03%3A09%3A49&n=200">trunk</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-05</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a173" href="http://www.sqlite.org/src/timeline?c=9e3aafe44a0813aa&unhide">19:35</a></td>
+<td class="timelineGraph">
+<div id="m43" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a174" href="http://www.sqlite.org/src/info/9e3aafe44a0813aa">[9e3aafe4]</a>
+<span class="timelineComment">Add tests for the matchinfo-like test function. Fix problems found in test and fts5 code by doing so.
+</span>
+(user: <a id="a175" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-05+19%3A35%3A59&nd&n=200">dan</a>,
+tags: <a id="a176" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-05+19%3A35%3A59&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a177" href="http://www.sqlite.org/src/timeline?c=0888838371608558&unhide">15:29</a></td>
+<td class="timelineGraph">
+<div id="m44" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a178" href="http://www.sqlite.org/src/info/0888838371608558">[08888383]</a>
+<span class="timelineComment">Update the spellfix virtual table extension so that an explicit "top = ?" constraint works even if there is also a "distance &lt; ?" or "distance &lt;= ?" constraint.
+</span>
+(user: <a id="a179" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-05+15%3A29%3A32&nd&n=200">dan</a>,
+tags: <a id="a180" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-05+15%3A29%3A32&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a181" href="http://www.sqlite.org/src/timeline?c=c9ff4ca4a0b44bbb&unhide">08:01</a></td>
+<td class="timelineGraph">
+<div id="m45" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a182" href="http://www.sqlite.org/src/info/c9ff4ca4a0b44bbb">[c9ff4ca4]</a>
+<span class="timelineComment">Fix some problems in test code detected by cppcheck.
+</span>
+(user: <a id="a183" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-05+08%3A01%3A46&nd&n=200">dan</a>,
+tags: <a id="a184" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-05+08%3A01%3A46&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a185" href="http://www.sqlite.org/src/timeline?c=dffd358f6cbf575d&unhide">07:43</a></td>
+<td class="timelineGraph">
+<div id="m46" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a186" href="http://www.sqlite.org/src/info/dffd358f6cbf575d">[dffd358f]</a>
+<span class="timelineComment">Remove all references to "docid" within fts5 source code and comments. Replace with "rowid".
+</span>
+(user: <a id="a187" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-05+07%3A43%3A46&nd&n=200">dan</a>,
+tags: <a id="a188" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-05+07%3A43%3A46&n=200">trunk</a>)
+</td></tr>
+<tr><td>
+  <div class="divider timelineDate">2015-08-04</div>
+</td><td></td><td></td></tr>
+<tr>
+<td class="timelineTime"><a id="a189" href="http://www.sqlite.org/src/timeline?c=4f9520a9dc9c667b&unhide">20:29</a></td>
+<td class="timelineGraph">
+<div id="m47" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a190" href="http://www.sqlite.org/src/info/4f9520a9dc9c667b">[4f9520a9]</a>
+<span class="timelineComment">Add new test file fts5_test_mi.c, containing an implementation of a function similar to FTS4 matchinfo() for FTS5.
+</span>
+(user: <a id="a191" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-04+20%3A29%3A00&nd&n=200">dan</a>,
+tags: <a id="a192" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-04+20%3A29%3A00&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a193" href="http://www.sqlite.org/src/timeline?c=783f78e39795b2c4&unhide">19:06</a></td>
+<td class="timelineGraph">
+<div id="m48" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a194" href="http://www.sqlite.org/src/info/783f78e39795b2c4">[783f78e3]</a>
+<span class="timelineComment">Improve the usage comment on sqlite3_analyzer: show the available switches.
+</span>
+(user: <a id="a195" href="http://www.sqlite.org/src/timeline?u=drh&c=2015-08-04+19%3A06%3A50&nd&n=200">drh</a>,
+tags: <a id="a196" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-04+19%3A06%3A50&n=200">trunk</a>)
+</td></tr>
+<tr>
+<td class="timelineTime"><a id="a197" href="http://www.sqlite.org/src/timeline?c=e3c6d4b6e738c7ea&unhide">15:29</a></td>
+<td class="timelineGraph">
+<div id="m49" class="tl-nodemark"></div>
+</td>
+<td class="timelineTableCell">
+<a class="timelineHistLink" id="a198" href="http://www.sqlite.org/src/info/e3c6d4b6e738c7ea">[e3c6d4b6]</a>
+<span class="timelineComment">Update the [showdb] program so that the database file is read directly (bypassing the SQLite VFS) only if the --raw option is specified. Otherwise, it is read using the default VFS. Also, the URI syntax may be used on the command line to specify the name of the database file to examine, so an alternative VFS may be requested using a URI parameter.
+</span>
+(user: <a id="a199" href="http://www.sqlite.org/src/timeline?u=dan&c=2015-08-04+15%3A29%3A43&nd&n=200">dan</a>,
+tags: <a id="a200" href="http://www.sqlite.org/src/timeline?r=trunk&nd&c=2015-08-04+15%3A29%3A43&n=200">trunk</a>)
+</td></tr>
+<tr class="timelineBottom" style="height: 12px;"><td></td><td></td><td></td></tr>
+</tbody></table>
+<script>(function(){
+"use strict";
+var css = "";
+css += ".tl-node, .tl-node:after { border-radius: 50%; }";
+if( css!=="" ){
+  var style = document.createElement("style");
+  style.textContent = css;
+  document.querySelector("head").appendChild(style);
+}
+var rowinfo = [
+{id:1,bg:"#aebfd2",r:1,d:0,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#5c6d80",mi:[],h:"42c15c1e36b5077646fef99028cf12e587a45023"},
+{id:2,bg:"#aebfd2",r:1,d:0,mo:-1,mu:0,u:1,f:0,au:[],fg:"#5c6d80",mi:[],h:"789ba487000aa73621a41d115ad5de455ea8ea31"},
+{id:3,bg:"#a5cfa8",r:4,d:1,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#568059",mi:[],h:"de1ea450db33b140b11af5b801ea6a15875e774e"},
+{id:4,bg:"",r:0,d:0,mo:-1,mu:0,u:-1,f:1,au:[],mi:[],h:"f65a9b4ab2c6f0b7028e16e2a0f83fd6d58ae1cd"},
+{id:5,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#805f60",mi:[],h:"bee73d429cb0e99b43fb191ac15e298d0353b135"},
+{id:6,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:5,f:0,au:[],fg:"#805f60",mi:[],h:"83a844357e132683ab3d88eee0fe32a8beeb6662"},
+{id:7,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:6,f:0,au:[],fg:"#805f60",mi:[],h:"bf383e665a191a4f33a540d1240960a922e22813"},
+{id:8,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:7,f:0,au:[],fg:"#805f60",mi:[],h:"581e3d4988e98975fea5daaeb9f854c54a4976b7"},
+{id:9,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:8,f:0,au:[],fg:"#805f60",mi:[],h:"fc3fb5cd0d2c123a069e5b18b62bb1f708c8698a"},
+{id:10,bg:"",r:0,d:0,mo:-1,mu:0,u:4,f:0,au:[],mi:[],h:"5e06a9c186f4b7478c73155613de219d702e0241"},
+{id:11,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:9,f:0,au:[],fg:"#805f60",mi:[],h:"f0d428d13a787251c2ca7685fec2a91b550eefba"},
+{id:12,bg:"#d2c49d",r:3,d:1,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#80724b",mi:[],h:"12640cb22240ee436cad99360ceb9a208edd14f5"},
+{id:13,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:11,f:0,au:[],fg:"#805f60",mi:[],h:"608ab4ac1911d5f32a17ea043bd5f0748598691d"},
+{id:14,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:13,f:0,au:[],fg:"#805f60",mi:[],h:"206884718782331a7aaacc2c811e4e9d2effae91"},
+{id:15,bg:"#c4a3a4",r:2,d:0,mo:-1,mu:0,u:14,f:0,au:[],fg:"#805f60",mi:[],h:"be254715b5f56900e57ed57a179ca8d7bb68685d"},
+{id:16,bg:"#d7c5b2",r:5,d:0,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#806e5b",mi:[],h:"90760e72327eb0593cbfa6d7058b554198cd8044"},
+{id:17,bg:"#c4a3a4",r:2,d:1,mo:-1,mu:0,u:15,f:0,au:[],fg:"#805f60",mi:[0],h:"82a7a61bc0883b1e7432548e4890791717aa1bb3"},
+{id:18,bg:"",r:0,d:0,mo:0,mu:17,u:10,f:0,au:[],mi:[],h:"851a875ad6b81f90960caf4d03b116afc911858d"},
+{id:19,bg:"#aebfd2",r:1,d:0,mo:-1,mu:0,u:2,f:0,au:[],fg:"#5c6d80",mi:[],h:"e3596ac7b1dd5bde3f9cae5781a6806d8d9f7166"},
+{id:20,bg:"",r:0,d:0,mo:-1,mu:0,u:18,f:0,au:[],mi:[],h:"ee966af8ff79189f8b90f3557dea21059517dfe2"},
+{id:21,bg:"#d7c5b2",r:5,d:0,mo:-1,mu:0,u:16,f:0,au:[],fg:"#806e5b",mi:[],h:"5669ac4a40429abc3f44540fc9d2f3b79b404bdf"},
+{id:22,bg:"#aebfd2",r:1,d:0,mo:-1,mu:0,u:19,f:0,au:[],fg:"#5c6d80",mi:[],h:"414a95f3b79359f167858b2325fd2be223569c66"},
+{id:23,bg:"#aebfd2",r:1,d:0,mo:-1,mu:0,u:22,f:0,au:[],fg:"#5c6d80",mi:[],h:"dde8afdd8dba1d92560326dca7c1cdfedbe5e070"},
+{id:24,bg:"",r:0,d:0,mo:-1,mu:0,u:20,f:0,au:[5,21],mi:[],h:"efb7c9c5d0015c8c966f8d6742c05cda82fc146a"},
+{id:25,bg:"",r:0,d:0,mo:-1,mu:0,u:24,f:0,au:[1,23],mi:[],h:"f7682435278419829a46bb4cc9b5625d46549e22"},
+{id:26,bg:"#c8c1d7",r:1,d:1,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#716a80",mi:[],h:"600df309fc547db3dc21cfc41609eb3dcaa67273"},
+{id:27,bg:"",r:0,d:0,mo:-1,mu:0,u:25,f:0,au:[],mi:[6],h:"61cb2fc6c12810863c965c74e90bc502e20cf810"},
+{id:28,bg:"#aebdd2",r:5,d:0,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#5c6b80",mi:[],h:"b09e3ea7b86ff65d749ff0b6c27e05fd3a5fadb1"},
+{id:29,bg:"#aebdd2",r:5,d:0,mo:-1,mu:0,u:28,f:0,au:[],fg:"#5c6b80",mi:[],h:"e844304de7c7d50c4c22c2633bbfef146dfc0be1"},
+{id:30,bg:"#aebdd2",r:5,d:0,mo:-1,mu:0,u:29,f:0,au:[],fg:"#5c6b80",mi:[],h:"56ff336e0ae258f4ac0b221602012f5fa9b4fc13"},
+{id:31,bg:"#aebdd2",r:5,d:0,mo:-1,mu:0,u:30,f:0,au:[],fg:"#5c6b80",mi:[],h:"bb5d7782bdc73748e54d202ddd7b082c6ee58ebf"},
+{id:32,bg:"#aebdd2",r:5,d:0,mo:-1,mu:0,u:31,f:0,au:[],fg:"#5c6b80",mi:[],h:"ac5d2e9d760bb376e828e3d39ee070b567e59d58"},
+{id:33,bg:"",r:0,d:0,mo:-1,mu:0,u:27,f:0,au:[5,32],mi:[5],h:"fd5608fb20831f1f1946c8941445b7acc463a143"},
+{id:34,bg:"#d3c1cc",r:5,d:0,mo:5,mu:33,u:-1,f:1,au:[],fg:"#806e79",mi:[],h:"962b6cd6bbc1ef82ae98cb2ddf41e7a1116e70f5"},
+{id:35,bg:"#d3c1cc",r:5,d:0,mo:-1,mu:0,u:34,f:0,au:[],fg:"#806e79",mi:[],h:"be190fe7826d157fc5acd84210095725b059e4f6"},
+{id:36,bg:"",r:0,d:0,mo:-1,mu:0,u:33,f:0,au:[5,35],mi:[],h:"1d75a41bb2f7fcd32f9f08768517b814e452e456"},
+{id:37,bg:"",r:0,d:0,mo:-1,mu:0,u:36,f:0,au:[],mi:[],h:"065765902d2774d7432b9c00ea2efed26e0aaa5e"},
+{id:38,bg:"",r:0,d:0,mo:-1,mu:0,u:37,f:0,au:[],mi:[],h:"6d47b35ad10e85f27d1c446586e8c798cce4911d"},
+{id:39,bg:"#afb9bf",r:5,d:0,mo:-1,mu:0,u:-1,f:1,au:[],fg:"#707a80",mi:[],h:"3a82c8e6cb7227fe05e304c9550d0398404e0938"},
+{id:40,bg:"",r:0,d:0,mo:-1,mu:0,u:38,f:0,au:[5,39],mi:[],h:"e596a6b63f3a18c26352b1b3e67bb282fdec8055"},
+{id:41,bg:"#adc6c1",r:5,d:0,mo:6,mu:27,u:-1,f:1,au:[],fg:"#67807b",mi:[],h:"0ddb2532b2daaaf1b0109ac360822f84cb999b7f"},
+{id:42,bg:"",r:0,d:0,mo:-1,mu:0,u:40,f:0,au:[5,41],mi:[],h:"483ebe8989ed7dbe197fe84e3eef6e76fa828e14"},
+{id:43,bg:"",r:0,d:0,mo:-1,mu:0,u:42,f:0,au:[],mi:[],h:"9e3aafe44a0813aa2a0c6172fdba1440b8a973ec"},
+{id:44,bg:"",r:0,d:0,mo:-1,mu:0,u:43,f:0,au:[],mi:[],h:"0888838371608558f31d5bcb5fed1c8861aa52c1"},
+{id:45,bg:"",r:0,d:0,mo:-1,mu:0,u:44,f:0,au:[],mi:[],h:"c9ff4ca4a0b44bbb8d6676144ddf77b04426e619"},
+{id:46,bg:"",r:0,d:0,mo:-1,mu:0,u:45,f:0,au:[],mi:[],h:"dffd358f6cbf575d3b1045b1ce53429d15bade2a"},
+{id:47,bg:"",r:0,d:0,mo:-1,mu:0,u:46,f:0,au:[],mi:[],h:"4f9520a9dc9c667b7fda5b0822de2bf48184ac99"},
+{id:48,bg:"",r:0,d:0,mo:-1,mu:0,u:47,f:0,au:[],mi:[],h:"783f78e39795b2c491c342558ef59f1fc32c2858"},
+{id:49,bg:"",r:0,d:1,mo:-1,mu:0,u:48,f:0,au:[],mi:[-5],h:"e3c6d4b6e738c7ea015c0c809a5f7d1a94dda945"}];
+var nrail = 7
+var canvasDiv;
+var railPitch;
+var mergeOffset;
+var node, arrow, arrowSmall, line, mArrow, mLine, wArrow, wLine;
+function initGraph(){
+  var parent = gebi("timelineTable").rows[0].cells[1];
+  parent.style.verticalAlign = "top";
+  canvasDiv = document.createElement("div");
+  canvasDiv.className = "tl-canvas";
+  canvasDiv.style.position = "absolute";
+  parent.appendChild(canvasDiv);
+
+  var elems = {};
+  var elemClasses = [
+    "rail", "mergeoffset", "node", "arrow u", "arrow u sm", "line",
+    "arrow merge r", "line merge", "arrow warp", "line warp"
+  ];
+  for( var i=0; i<elemClasses.length; i++ ){
+    var cls = elemClasses[i];
+    var elem = document.createElement("div");
+    elem.className = "tl-" + cls;
+    if( cls.indexOf("line")==0 ) elem.className += " v";
+    canvasDiv.appendChild(elem);
+    var k = cls.replace(/\s/g, "_");
+    var r = elem.getBoundingClientRect();
+    var w = Math.round(r.right - r.left);
+    var h = Math.round(r.bottom - r.top);
+    elems[k] = {w: w, h: h, cls: cls};
+  }
+  node = elems.node;
+  arrow = elems.arrow_u;
+  arrowSmall = elems.arrow_u_sm;
+  line = elems.line;
+  mArrow = elems.arrow_merge_r;
+  mLine = elems.line_merge;
+  wArrow = elems.arrow_warp;
+  wLine = elems.line_warp;
+
+  var minRailPitch = Math.ceil((node.w+line.w)/2 + mArrow.w + 1);
+  railPitch = elems.rail.w;
+  railPitch -= Math.floor((nrail-1)*(railPitch-minRailPitch)/21);
+  railPitch = Math.max(railPitch, minRailPitch);
+
+  mergeOffset = railPitch-minRailPitch-mLine.w;
+  mergeOffset = Math.min(mergeOffset, elems.mergeoffset.w);
+  mergeOffset = mergeOffset>0 ? mergeOffset + line.w/2 : 0;
+
+  var canvasWidth = (nrail-1)*railPitch + node.w;
+  canvasDiv.style.width = canvasWidth + "px";
+  canvasDiv.style.position = "relative";
+}
+function drawBox(cls,color,x0,y0,x1,y1){
+  var n = document.createElement("div");
+  x0 = Math.floor(x0);
+  y0 = Math.floor(y0);
+  x1 = x1 || x1===0 ? Math.floor(x1) : x0;
+  y1 = y1 || y1===0 ? Math.floor(y1) : y0;
+  if( x0>x1 ){ var t=x0; x0=x1; x1=t; }
+  if( y0>y1 ){ var t=y0; y0=y1; y1=t; }
+  var w = x1-x0;
+  var h = y1-y0;
+  n.style.position = "absolute";
+  n.style.left = x0+"px";
+  n.style.top = y0+"px";
+  if( w ) n.style.width = w+"px";
+  if( h ) n.style.height = h+"px";
+  if( color ) n.style.backgroundColor = color;
+  n.className = "tl-"+cls;
+  canvasDiv.appendChild(n);
+  return n;
+}
+function absoluteY(obj){
+  var top = 0;
+  if( obj.offsetParent ){
+    do{
+      top += obj.offsetTop;
+    }while( obj = obj.offsetParent );
+  }
+  return top;
+}
+function miLineY(p){
+  return p.y + node.h - mLine.w - 1;
+}
+function drawLine(elem,color,x0,y0,x1,y1){
+  var cls = elem.cls + " ";
+  if( x1===null ){
+    x1 = x0+elem.w;
+    cls += "v";
+  }else{
+    y1 = y0+elem.w;
+    cls += "h";
+  }
+  drawBox(cls,color,x0,y0,x1,y1);
+}
+function drawUpArrow(from,to,color){
+  var y = to.y + node.h;
+  var arrowSpace = from.y - y + (!from.id || from.r!=to.r ? node.h/2 : 0);
+  var arw = arrowSpace < arrow.h*1.5 ? arrowSmall : arrow;
+  var x = to.x + (node.w-line.w)/2;
+  var y0 = from.y + node.h/2;
+  var y1 = Math.ceil(to.y + node.h + arw.h/2);
+  drawLine(line,color,x,y0,null,y1);
+  x = to.x + (node.w-arw.w)/2;
+  var n = drawBox(arw.cls,null,x,y);
+  n.style.borderBottomColor = color;
+}
+function drawMergeLine(x0,y0,x1,y1){
+  drawLine(mLine,null,x0,y0,x1,y1);
+}
+function drawMergeArrow(p,rail){
+  var x0 = rail*railPitch + node.w/2;
+  if( rail in mergeLines ){
+    x0 += mergeLines[rail];
+    if( p.r<rail ) x0 += mLine.w;
+  }else{
+    x0 += (p.r<rail ? -1 : 1)*line.w/2;
+  }
+  var x1 = mArrow.w ? mArrow.w/2 : -node.w/2;
+  x1 = p.x + (p.r<rail ? node.w + Math.ceil(x1) : -x1);
+  var y = miLineY(p);
+  drawMergeLine(x0,y,x1,null);
+  var x = p.x + (p.r<rail ? node.w : -mArrow.w);
+  var cls = "arrow merge " + (p.r<rail ? "l" : "r");
+  drawBox(cls,null,x,y+(mLine.w-mArrow.h)/2);
+}
+function drawNode(p, btm){
+  if( p.u>0 ) drawUpArrow(p,rowinfo[p.u-1],p.fg);
+  var cls = node.cls;
+  if( p.mi.length ) cls += " merge";
+  if( p.f&1 ) cls += " leaf";
+  var n = drawBox(cls,p.bg,p.x,p.y);
+  n.id = "tln"+p.id;
+  n.onclick = clickOnNode;
+  n.style.zIndex = 10;
+  if( p.u==0 ) drawUpArrow(p,{x: p.x, y: -node.h},p.fg);
+  if( p.d ) drawUpArrow({x: p.x, y: btm-node.h/2},p,p.fg);
+  if( p.mo>=0 ){
+    var x0 = p.x + node.w/2;
+    var x1 = p.mo*railPitch + node.w/2;
+    var u = rowinfo[p.mu-1];
+    var y1 = miLineY(u);
+    if( p.u<0 || p.mo!=p.r ){
+      x1 += mergeLines[p.mo] = -mLine.w/2;
+      var y0 = p.y+2;
+      if( p.r!=p.mo ) drawMergeLine(x0,y0,x1+(x0<x1 ? mLine.w : 0),null);
+      drawMergeLine(x1,y0+mLine.w,null,y1);
+    }else if( mergeOffset ){
+      mergeLines[p.mo] = u.r<p.r ? -mergeOffset-mLine.w : mergeOffset;
+      x1 += mergeLines[p.mo];
+      drawMergeLine(x1,p.y+node.h/2,null,y1);
+    }else{
+      delete mergeLines[p.mo];
+    }
+  }
+  for( var i=0; i<p.au.length; i+=2 ){
+    var rail = p.au[i];
+    var x0 = p.x + node.w/2;
+    var x1 = rail*railPitch + (node.w-line.w)/2;
+    if( x0<x1 ){
+      x0 = Math.ceil(x0);
+      x1 += line.w;
+    }
+    var y0 = p.y + (node.h-line.w)/2;
+    var u = rowinfo[p.au[i+1]-1];
+    if( u.id<p.id ){
+      drawLine(line,u.fg,x0,y0,x1,null);
+      drawUpArrow(p,u,u.fg);
+    }else{
+      var y1 = u.y + (node.h-line.w)/2;
+      drawLine(wLine,u.fg,x0,y0,x1,null);
+      drawLine(wLine,u.fg,x1-line.w,y0,null,y1+line.w);
+      drawLine(wLine,u.fg,x1,y1,u.x-wArrow.w/2,null);
+      var x = u.x-wArrow.w;
+      var y = u.y+(node.h-wArrow.h)/2;
+      var n = drawBox(wArrow.cls,null,x,y);
+      if( u.fg ) n.style.borderLeftColor = u.fg;
+    }
+  }
+  for( var i=0; i<p.mi.length; i++ ){
+    var rail = p.mi[i];
+    if( rail<0 ){
+      rail = -rail;
+      mergeLines[rail] = -mLine.w/2;
+      var x = rail*railPitch + (node.w-mLine.w)/2;
+      drawMergeLine(x,miLineY(p),null,btm);
+    }
+    drawMergeArrow(p,rail);
+  }
+}
+var mergeLines;
+function renderGraph(){
+  mergeLines = {};
+  canvasDiv.innerHTML = "";
+  var canvasY = absoluteY(canvasDiv);
+  for( var i=0; i<rowinfo.length; i++ ){
+    rowinfo[i].y = absoluteY(gebi("m"+rowinfo[i].id)) - canvasY;
+    rowinfo[i].x = rowinfo[i].r*railPitch;
+  }
+  var tlBtm = document.querySelector(".timelineBottom");
+  if( tlBtm.offsetHeight<node.h ){
+    tlBtm.style.height = node.h + "px";
+  }
+  var btm = absoluteY(tlBtm) - canvasY + tlBtm.offsetHeight;
+  for( var i=rowinfo.length-1; i>=0; i-- ){
+    drawNode(rowinfo[i], btm);
+  }
+}
+var selRow;
+function clickOnNode(){
+  var p = rowinfo[parseInt(this.id.match(/\d+$/)[0], 10)-1];
+  if( !selRow ){
+    selRow = p;
+    this.className += " sel";
+    canvasDiv.className += " sel";
+  }else if( selRow==p ){
+    selRow = null;
+    this.className = this.className.replace(" sel", "");
+    canvasDiv.className = canvasDiv.className.replace(" sel", "");
+  }else{
+    location.href="/src/vdiff?from="+selRow.h+"&to="+p.h+"&sbs=1";
+  }
+}
+var lastRow = gebi("m"+rowinfo[rowinfo.length-1].id);
+var lastY = 0;
+function checkHeight(){
+  var h = absoluteY(lastRow);
+  if( h!=lastY ){
+    renderGraph();
+    lastY = h;
+  }
+  setTimeout(checkHeight, 1000);
+}
+initGraph();
+checkHeight();
+}())</script>
+<a class="button" id="a201" href="http://www.sqlite.org/src/timeline?n=50&b=2015-08-04+15:29:43">Older</a>
+</div>
+<script>
+function setAllHrefs(){
+gebi("a1").href="/src/timeline?c=42c15c1e36b50776&unhide";
+gebi("a2").href="/src/info/42c15c1e36b50776";
+gebi("a3").href="/src/timeline?u=drh&c=2015-08-15+21%3A29%3A14&nd&n=200";
+gebi("a4").href="/src/timeline?r=json&nd&c=2015-08-15+21%3A29%3A14&n=200";
+gebi("a5").href="/src/timeline?c=789ba487000aa736&unhide";
+gebi("a6").href="/src/info/789ba487000aa736";
+gebi("a7").href="/src/timeline?u=drh&c=2015-08-15+21%3A25%3A37&nd&n=200";
+gebi("a8").href="/src/timeline?r=json&nd&c=2015-08-15+21%3A25%3A37&n=200";
+gebi("a9").href="/src/timeline?c=de1ea450db33b140&unhide";
+gebi("a10").href="/src/info/de1ea450db33b140";
+gebi("a11").href="/src/timeline?u=dan&c=2015-08-15+18%3A16%3A46&nd&n=200";
+gebi("a12").href="/src/timeline?r=experimental-begin-unlocked&nd&c=2015-08-15+18%3A16%3A46&n=200";
+gebi("a13").href="/src/timeline?c=f65a9b4ab2c6f0b7&unhide";
+gebi("a14").href="/src/info/f65a9b4ab2c6f0b7";
+gebi("a15").href="/src/timeline?u=drh&c=2015-08-15+16%3A32%3A50&nd&n=200";
+gebi("a16").href="/src/timeline?r=trunk&nd&c=2015-08-15+16%3A32%3A50&n=200";
+gebi("a17").href="/src/timeline?c=bee73d429cb0e99b&unhide";
+gebi("a18").href="/src/info/bee73d429cb0e99b";
+gebi("a19").href="/src/timeline?u=drh&c=2015-08-15+00%3A51%3A23&nd&n=200";
+gebi("a20").href="/src/timeline?r=cursor-hints&nd&c=2015-08-15+00%3A51%3A23&n=200";
+gebi("a21").href="/src/timeline?c=83a844357e132683&unhide";
+gebi("a22").href="/src/info/83a844357e132683";
+gebi("a23").href="/src/timeline?u=drh&c=2015-08-14+23%3A57%3A04&nd&n=200";
+gebi("a24").href="/src/timeline?r=cursor-hints&nd&c=2015-08-14+23%3A57%3A04&n=200";
+gebi("a25").href="/src/timeline?c=bf383e665a191a4f&unhide";
+gebi("a26").href="/src/info/bf383e665a191a4f";
+gebi("a27").href="/src/timeline?u=drh&c=2015-08-14+20%3A08%3A13&nd&n=200";
+gebi("a28").href="/src/timeline?r=cursor-hints&nd&c=2015-08-14+20%3A08%3A13&n=200";
+gebi("a29").href="/src/timeline?c=581e3d4988e98975&unhide";
+gebi("a30").href="/src/info/581e3d4988e98975";
+gebi("a31").href="/src/timeline?u=drh&c=2015-08-14+18%3A50%3A04&nd&n=200";
+gebi("a32").href="/src/timeline?r=cursor-hints&nd&c=2015-08-14+18%3A50%3A04&n=200";
+gebi("a33").href="/src/timeline?c=fc3fb5cd0d2c123a&unhide";
+gebi("a34").href="/src/info/fc3fb5cd0d2c123a";
+gebi("a35").href="/src/timeline?u=drh&c=2015-08-14+15%3A05%3A55&nd&n=200";
+gebi("a36").href="/src/timeline?r=cursor-hints&nd&c=2015-08-14+15%3A05%3A55&n=200";
+gebi("a37").href="/src/timeline?c=5e06a9c186f4b747&unhide";
+gebi("a38").href="/src/info/5e06a9c186f4b747";
+gebi("a39").href="/src/timeline?u=drh&c=2015-08-14+12%3A53%3A37&nd&n=200";
+gebi("a40").href="/src/timeline?r=trunk&nd&c=2015-08-14+12%3A53%3A37&n=200";
+gebi("a41").href="/src/timeline?c=f0d428d13a787251&unhide";
+gebi("a42").href="/src/info/f0d428d13a787251";
+gebi("a43").href="/src/timeline?u=drh&c=2015-08-14+01%3A03%3A21&nd&n=200";
+gebi("a44").href="/src/timeline?r=cursor-hints&nd&c=2015-08-14+01%3A03%3A21&n=200";
+gebi("a45").href="/src/timeline?c=12640cb22240ee43&unhide";
+gebi("a46").href="/src/info/12640cb22240ee43";
+gebi("a47").href="/src/timeline?u=drh&c=2015-08-13+21%3A43%3A19&nd&n=200";
+gebi("a48").href="/src/timeline?r=cursor-hints-displayP4&nd&c=2015-08-13+21%3A43%3A19&n=200";
+gebi("a49").href="/src/timeline?c=608ab4ac1911d5f3&unhide";
+gebi("a50").href="/src/info/608ab4ac1911d5f3";
+gebi("a51").href="/src/timeline?u=drh&c=2015-08-13+21%3A38%3A09&nd&n=200";
+gebi("a52").href="/src/timeline?r=cursor-hints&nd&c=2015-08-13+21%3A38%3A09&n=200";
+gebi("a53").href="/src/timeline?c=206884718782331a&unhide";
+gebi("a54").href="/src/info/206884718782331a";
+gebi("a55").href="/src/timeline?u=drh&c=2015-08-13+21%3A32%3A41&nd&n=200";
+gebi("a56").href="/src/timeline?r=cursor-hints&nd&c=2015-08-13+21%3A32%3A41&n=200";
+gebi("a57").href="/src/timeline?c=be254715b5f56900&unhide";
+gebi("a58").href="/src/info/be254715b5f56900";
+gebi("a59").href="/src/timeline?u=drh&c=2015-08-13+20%3A34%3A41&nd&n=200";
+gebi("a60").href="/src/timeline?r=cursor-hints&nd&c=2015-08-13+20%3A34%3A41&n=200";
+gebi("a61").href="/src/timeline?c=90760e72327eb059&unhide";
+gebi("a62").href="/src/info/90760e72327eb059";
+gebi("a63").href="/src/timeline?u=dan&c=2015-08-13+20%3A23%3A46&nd&n=200";
+gebi("a64").href="/src/timeline?r=wal-read-change&nd&c=2015-08-13+20%3A23%3A46&n=200";
+gebi("a65").href="/src/timeline?c=82a7a61bc0883b1e&unhide";
+gebi("a66").href="/src/info/82a7a61bc0883b1e";
+gebi("a67").href="/src/timeline?u=drh&c=2015-08-13+20%3A07%3A13&nd&n=200";
+gebi("a68").href="/src/timeline?r=cursor-hints&nd&c=2015-08-13+20%3A07%3A13&n=200";
+gebi("a69").href="/src/timeline?c=851a875ad6b81f90&unhide";
+gebi("a70").href="/src/info/851a875ad6b81f90";
+gebi("a71").href="/src/timeline?u=dan&c=2015-08-13+18%3A26%3A09&nd&n=200";
+gebi("a72").href="/src/timeline?r=trunk&nd&c=2015-08-13+18%3A26%3A09&n=200";
+gebi("a73").href="/src/timeline?c=e3596ac7b1dd5bde&unhide";
+gebi("a74").href="/src/info/e3596ac7b1dd5bde";
+gebi("a75").href="/src/timeline?u=drh&c=2015-08-13+13%3A54%3A59&nd&n=200";
+gebi("a76").href="/src/timeline?r=json&nd&c=2015-08-13+13%3A54%3A59&n=200";
+gebi("a77").href="/src/timeline?c=ee966af8ff79189f&unhide";
+gebi("a78").href="/src/info/ee966af8ff79189f";
+gebi("a79").href="/src/timeline?u=dan&c=2015-08-13+11%3A46%3A21&nd&n=200";
+gebi("a80").href="/src/timeline?r=trunk&nd&c=2015-08-13+11%3A46%3A21&n=200";
+gebi("a81").href="/src/timeline?c=5669ac4a40429abc&unhide";
+gebi("a82").href="/src/info/5669ac4a40429abc";
+gebi("a83").href="/src/timeline?u=dan&c=2015-08-12+19%3A42%3A08&nd&n=200";
+gebi("a84").href="/src/timeline?r=wal-read-change&nd&c=2015-08-12+19%3A42%3A08&n=200";
+gebi("a85").href="/src/timeline?c=414a95f3b79359f1&unhide";
+gebi("a86").href="/src/info/414a95f3b79359f1";
+gebi("a87").href="/src/timeline?u=drh&c=2015-08-12+17%3A23%3A34&nd&n=200";
+gebi("a88").href="/src/timeline?r=json&nd&c=2015-08-12+17%3A23%3A34&n=200";
+gebi("a89").href="/src/timeline?c=dde8afdd8dba1d92&unhide";
+gebi("a90").href="/src/info/dde8afdd8dba1d92";
+gebi("a91").href="/src/timeline?u=drh&c=2015-08-12+16%3A49%3A40&nd&n=200";
+gebi("a92").href="/src/timeline?r=json&nd&c=2015-08-12+16%3A49%3A40&n=200";
+gebi("a93").href="/src/timeline?c=efb7c9c5d0015c8c&unhide";
+gebi("a94").href="/src/info/efb7c9c5d0015c8c";
+gebi("a95").href="/src/timeline?u=dan&c=2015-08-12+15%3A36%3A58&nd&n=200";
+gebi("a96").href="/src/timeline?r=trunk&nd&c=2015-08-12+15%3A36%3A58&n=200";
+gebi("a97").href="/src/timeline?c=f768243527841982&unhide";
+gebi("a98").href="/src/info/f768243527841982";
+gebi("a99").href="/src/timeline?u=dan&c=2015-08-12+12%3A11%3A28&nd&n=200";
+gebi("a100").href="/src/timeline?r=trunk&nd&c=2015-08-12+12%3A11%3A28&n=200";
+gebi("a101").href="/src/timeline?c=600df309fc547db3&unhide";
+gebi("a102").href="/src/info/600df309fc547db3";
+gebi("a103").href="/src/timeline?u=drh&c=2015-08-11+18%3A18%3A24&nd&n=200";
+gebi("a104").href="/src/timeline?r=apple-osx&nd&c=2015-08-11+18%3A18%3A24&n=200";
+gebi("a105").href="/src/timeline?c=61cb2fc6c1281086&unhide";
+gebi("a106").href="/src/info/61cb2fc6c1281086";
+gebi("a107").href="/src/timeline?u=dan&c=2015-08-11+14%3A25%3A34&nd&n=200";
+gebi("a108").href="/src/timeline?r=trunk&nd&c=2015-08-11+14%3A25%3A34&n=200";
+gebi("a109").href="/src/timeline?c=b09e3ea7b86ff65d&unhide";
+gebi("a110").href="/src/info/b09e3ea7b86ff65d";
+gebi("a111").href="/src/timeline?u=dan&c=2015-08-11+13%3A41%3A44&nd&n=200";
+gebi("a112").href="/src/timeline?r=experimentalIoLog&nd&c=2015-08-11+13%3A41%3A44&n=200";
+gebi("a113").href="/src/timeline?c=e844304de7c7d50c&unhide";
+gebi("a114").href="/src/info/e844304de7c7d50c";
+gebi("a115").href="/src/timeline?u=dan&c=2015-08-11+10%3A59%3A10&nd&n=200";
+gebi("a116").href="/src/timeline?r=experimentalIoLog&nd&c=2015-08-11+10%3A59%3A10&n=200";
+gebi("a117").href="/src/timeline?c=56ff336e0ae258f4&unhide";
+gebi("a118").href="/src/info/56ff336e0ae258f4";
+gebi("a119").href="/src/timeline?u=drh&c=2015-08-11+01%3A45%3A40&nd&n=200";
+gebi("a120").href="/src/timeline?r=experimentalIoLog&nd&c=2015-08-11+01%3A45%3A40&n=200";
+gebi("a121").href="/src/timeline?c=bb5d7782bdc73748&unhide";
+gebi("a122").href="/src/info/bb5d7782bdc73748";
+gebi("a123").href="/src/timeline?u=drh&c=2015-08-10+20%3A53%3A22&nd&n=200";
+gebi("a124").href="/src/timeline?r=experimentalIoLog&nd&c=2015-08-10+20%3A53%3A22&n=200";
+gebi("a125").href="/src/timeline?c=ac5d2e9d760bb376&unhide";
+gebi("a126").href="/src/info/ac5d2e9d760bb376";
+gebi("a127").href="/src/timeline?u=drh&c=2015-08-10+20%3A22%3A07&nd&n=200";
+gebi("a128").href="/src/timeline?r=experimentalIoLog&nd&c=2015-08-10+20%3A22%3A07&n=200";
+gebi("a129").href="/src/timeline?c=fd5608fb20831f1f&unhide";
+gebi("a130").href="/src/info/fd5608fb20831f1f";
+gebi("a131").href="/src/timeline?u=drh&c=2015-08-08+23%3A30%3A56&nd&n=200";
+gebi("a132").href="/src/timeline?r=trunk&nd&c=2015-08-08+23%3A30%3A56&n=200";
+gebi("a133").href="/src/timeline?c=962b6cd6bbc1ef82&unhide";
+gebi("a134").href="/src/info/962b6cd6bbc1ef82";
+gebi("a135").href="/src/timeline?u=drh&c=2015-08-08+23%3A23%3A33&nd&n=200";
+gebi("a136").href="/src/timeline?r=warnings&nd&c=2015-08-08+23%3A23%3A33&n=200";
+gebi("a137").href="/src/timeline?c=8d92b57b6dcd7704&unhide";
+gebi("a138").href="/src/info/be190fe7826d157f";
+gebi("a139").href="/src/timeline?u=drh&c=2015-08-08+22%3A48%3A29&nd&n=200";
+gebi("a140").href="/src/info/8d92b57b6dcd7704";
+gebi("a141").href="/src/timeline?c=be190fe7826d157f&unhide";
+gebi("a142").href="/src/info/be190fe7826d157f";
+gebi("a143").href="/src/timeline?u=drh&c=2015-08-08+22%3A47%3A47&nd&n=200";
+gebi("a144").href="/src/timeline?r=warnings&nd&c=2015-08-08+22%3A47%3A47&n=200";
+gebi("a145").href="/src/timeline?c=1d75a41bb2f7fcd3&unhide";
+gebi("a146").href="/src/info/1d75a41bb2f7fcd3";
+gebi("a147").href="/src/timeline?u=dan&c=2015-08-08+15%3A13%3A08&nd&n=200";
+gebi("a148").href="/src/timeline?r=trunk&nd&c=2015-08-08+15%3A13%3A08&n=200";
+gebi("a149").href="/src/timeline?c=065765902d2774d7&unhide";
+gebi("a150").href="/src/info/065765902d2774d7";
+gebi("a151").href="/src/timeline?u=drh&c=2015-08-07+20%3A57%3A00&nd&n=200";
+gebi("a152").href="/src/timeline?r=trunk&nd&c=2015-08-07+20%3A57%3A00&n=200";
+gebi("a153").href="/src/timeline?c=6d47b35ad10e85f2&unhide";
+gebi("a154").href="/src/info/6d47b35ad10e85f2";
+gebi("a155").href="/src/timeline?u=dan&c=2015-08-07+20%3A06%3A14&nd&n=200";
+gebi("a156").href="/src/timeline?r=trunk&nd&c=2015-08-07+20%3A06%3A14&n=200";
+gebi("a157").href="/src/timeline?c=3a82c8e6cb7227fe&unhide";
+gebi("a158").href="/src/info/3a82c8e6cb7227fe";
+gebi("a159").href="/src/timeline?u=dan&c=2015-08-07+09%3A42%3A12&nd&n=200";
+gebi("a160").href="/src/timeline?r=mmap-wal-bigtrans&nd&c=2015-08-07+09%3A42%3A12&n=200";
+gebi("a161").href="/src/timeline?c=e596a6b63f3a18c2&unhide";
+gebi("a162").href="/src/info/e596a6b63f3a18c2";
+gebi("a163").href="/src/timeline?u=drh&c=2015-08-06+12%3A54%3A13&nd&n=200";
+gebi("a164").href="/src/timeline?r=trunk&nd&c=2015-08-06+12%3A54%3A13&n=200";
+gebi("a165").href="/src/timeline?c=0ddb2532b2daaaf1&unhide";
+gebi("a166").href="/src/info/0ddb2532b2daaaf1";
+gebi("a167").href="/src/timeline?u=mistachkin&c=2015-08-06+03%3A19%3A14&nd&n=200";
+gebi("a168").href="/src/timeline?r=fts5NoWarn&nd&c=2015-08-06+03%3A19%3A14&n=200";
+gebi("a169").href="/src/timeline?c=483ebe8989ed7dbe&unhide";
+gebi("a170").href="/src/info/483ebe8989ed7dbe";
+gebi("a171").href="/src/timeline?u=mistachkin&c=2015-08-06+03%3A09%3A49&nd&n=200";
+gebi("a172").href="/src/timeline?r=trunk&nd&c=2015-08-06+03%3A09%3A49&n=200";
+gebi("a173").href="/src/timeline?c=9e3aafe44a0813aa&unhide";
+gebi("a174").href="/src/info/9e3aafe44a0813aa";
+gebi("a175").href="/src/timeline?u=dan&c=2015-08-05+19%3A35%3A59&nd&n=200";
+gebi("a176").href="/src/timeline?r=trunk&nd&c=2015-08-05+19%3A35%3A59&n=200";
+gebi("a177").href="/src/timeline?c=0888838371608558&unhide";
+gebi("a178").href="/src/info/0888838371608558";
+gebi("a179").href="/src/timeline?u=dan&c=2015-08-05+15%3A29%3A32&nd&n=200";
+gebi("a180").href="/src/timeline?r=trunk&nd&c=2015-08-05+15%3A29%3A32&n=200";
+gebi("a181").href="/src/timeline?c=c9ff4ca4a0b44bbb&unhide";
+gebi("a182").href="/src/info/c9ff4ca4a0b44bbb";
+gebi("a183").href="/src/timeline?u=dan&c=2015-08-05+08%3A01%3A46&nd&n=200";
+gebi("a184").href="/src/timeline?r=trunk&nd&c=2015-08-05+08%3A01%3A46&n=200";
+gebi("a185").href="/src/timeline?c=dffd358f6cbf575d&unhide";
+gebi("a186").href="/src/info/dffd358f6cbf575d";
+gebi("a187").href="/src/timeline?u=dan&c=2015-08-05+07%3A43%3A46&nd&n=200";
+gebi("a188").href="/src/timeline?r=trunk&nd&c=2015-08-05+07%3A43%3A46&n=200";
+gebi("a189").href="/src/timeline?c=4f9520a9dc9c667b&unhide";
+gebi("a190").href="/src/info/4f9520a9dc9c667b";
+gebi("a191").href="/src/timeline?u=dan&c=2015-08-04+20%3A29%3A00&nd&n=200";
+gebi("a192").href="/src/timeline?r=trunk&nd&c=2015-08-04+20%3A29%3A00&n=200";
+gebi("a193").href="/src/timeline?c=783f78e39795b2c4&unhide";
+gebi("a194").href="/src/info/783f78e39795b2c4";
+gebi("a195").href="/src/timeline?u=drh&c=2015-08-04+19%3A06%3A50&nd&n=200";
+gebi("a196").href="/src/timeline?r=trunk&nd&c=2015-08-04+19%3A06%3A50&n=200";
+gebi("a197").href="/src/timeline?c=e3c6d4b6e738c7ea&unhide";
+gebi("a198").href="/src/info/e3c6d4b6e738c7ea";
+gebi("a199").href="/src/timeline?u=dan&c=2015-08-04+15%3A29%3A43&nd&n=200";
+gebi("a200").href="/src/timeline?r=trunk&nd&c=2015-08-04+15%3A29%3A43&n=200";
+gebi("a201").href="/src/timeline?n=50&b=2015-08-04+15:29:43";
+}
+setTimeout("setAllHrefs();",10);
+</script>
+<div class="footer">
+This page was generated in about 
+0.007s by
+Fossil version 1.33 [f8e26879ac] 2015-07-27 16:16:36
+</div>
+<script>
+function updateClock(){
+  var e = document.getElementById("clock");
+  if(e){
+    var d = new Date();
+    e.innerHTML=d.toISOString().replace("T"," ").replace(/:\d\d\.\d+Z/,"");
+    setTimeout("updateClock();",(60-d.getSeconds())*1000);
+  }
+}
+updateClock();
+</script>
+
+</body></html>

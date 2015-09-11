@@ -1,0 +1,918 @@
+/* General settings for the entire page */
+body {
+  margin: 0ex 1ex;
+  padding: 0px;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+/* The project logo in the upper left-hand corner of each page */
+div.logo {
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+  font-weight: bold;
+  color: #044a64;
+}
+
+/* The page title centered at the top of each page */
+div.title {
+  display: table-cell;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #044a64;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+/* The login status message in the top right-hand corner */
+div.status {
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+  color: #044a64;
+  font-size: 0.8em;
+  font-weight: bold;
+  min-width: 219px;
+}
+div.status a { color: #044a64; }
+
+/* The header across the top of the page */
+div.header {
+  display: table;
+  width: 100%;
+}
+
+/* The main menu bar that appears at the top of the page beneath
+** the header */
+div.mainmenu {
+  padding: 5px 10px 5px 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #044a64;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+}
+
+/* The submenu bar that *sometimes* appears below the main menu */
+div.submenu, div.sectionmenu {
+  padding: 3px 10px 3px 0px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #5492a2;
+  color: white;
+}
+div.mainmenu a, div.mainmenu a:visited, div.submenu a, div.submenu a:visited,
+div.sectionmenu>a.button:link, div.sectionmenu>a.button:visited {
+  padding: 3px 10px 3px 10px;
+  color: white;
+  text-decoration: none;
+}
+div.mainmenu a:hover {
+  color: #044a64;
+  background-color: white;
+}
+div.submenu a:hover, div.sectionmenu>a.button:hover {
+  color: #5492a2;
+  background-color: white;
+}
+
+/* All page content from the bottom of the menu or submenu down to
+** the footer */
+div.content {
+  padding: 0ex 1ex 1ex 1ex;
+  border: solid #aaa;
+  border-width: 1px;
+}
+/* Make the links in the footer less ugly... */
+div.content a { color: #044a64; }
+div.content a:link { color: #044a64;}
+div.content a:visited { color: #734559; }
+
+
+/* Some pages have section dividers */
+div.section {
+  margin-bottom: 0px;
+  margin-top: 1em;
+  padding: 1px 1px 1px 1px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #044a64;
+  color: white;
+}
+
+/* The "Date" that occurs on the left hand side of timelines */
+div.divider {
+  background: #b4cacc;
+  border: 2px #044a64 solid;
+  font-size: 1em; font-weight: normal;
+  padding: .25em;
+  margin: .2em 0 .2em 0;
+  float: left;
+  clear: left;
+  white-space: nowrap;
+}
+
+/* The footer at the very bottom of the page */
+div.footer {
+  font-size: 0.8em;
+  padding: 5px 10px 5px 10px;
+  text-align: right;
+  background-color: #044a64;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+}
+
+/* Make the links in the footer less ugly... */
+div.footer a { color: white; }
+div.footer a:link { color: white; }
+div.footer a:visited { color: white; }
+div.footer a:hover { background-color: white; color: #044a64; }
+
+/* <verbatim> blocks */
+pre.verbatim {
+   background-color: #f5f5f5;
+   padding: 0.5em;
+  white-space: pre-wrap;
+}
+
+/* The label/value pairs on (for example) the ci page */
+table.label-value th {
+  vertical-align: top;
+  text-align: right;
+  padding: 0.2ex 2ex;
+}
+
+/* For marking important UI elements which shouldn't be
+   lightly dismissed. I mainly use it to mark "not yet
+   implemented" parts of a page. Whether or not to have
+   a 'border' attribute set is arguable. */
+.achtung {
+  color: #ff0000;
+  background: #ffff00;
+  border: 1px solid #ff0000;
+}
+
+div.miniform {
+    font-size: smaller;
+    margin: 8px;
+}
+span.diffchng {
+    background-color: #d0d0ff;
+}
+span.diffadd {
+    background-color: #c0ffc0;
+}
+span.diffrm {
+    background-color: #ffc0c0;
+}
+div.sbsdiff {
+  font-family: monospace;
+  font-size: x-small;
+  white-space: pre;
+}
+
+/* The nomenclature title in sideboxes for branches,.. */
+div.sideboxTitle {
+  display: inline;
+  font-weight: bold;
+}
+/* The defined element in sideboxes for branches,.. */
+div.sideboxDescribed {
+  display: inline;
+  font-weight: bold;
+}
+/* The defined element in sideboxes for branches,.. */
+span.disabled {
+  color: red;
+}
+/* The suppressed duplicates lines in timeline, .. */
+span.timelineDisabled {
+  font-style: italic;
+  font-size: small;
+}
+/* the format for the timeline data table */
+table.timelineTable {
+  border: 0;
+  border-collapse: collapse;
+}
+/* the format for the timeline data cells */
+td.timelineTableCell {
+  vertical-align: top;
+  text-align: left;
+}
+/* the format for the timeline data cell of the current checkout */
+tr.timelineCurrent td.timelineTableCell {
+  padding: .1em .2em;
+  border: 1px dashed #446979;
+}
+/* The row in the timeline table that contains the entry of interest */
+tr.timelineSelected {
+  padding: .1em .2em;
+  border: 2px solid lightgray;
+  background-color: #ffc;
+  box-shadow: 4px 4px 2px #888;
+}
+/* An extra row inserted to give vertical space between two rows */
+tr.timelineSpacer {
+  height: 1ex;
+}
+/* the format for the timeline leaf marks */
+span.timelineLeaf {
+  font-weight: bold;
+}
+/* the format for the timeline version links */
+a.timelineHistLink {
+
+}
+/* the format for the timeline version display(no history permission!) */
+span.timelineHistDsp {
+  font-weight: bold;
+}
+/* the format for the timeline time display */
+td.timelineTime {
+  vertical-align: top;
+  text-align: right;
+  white-space: nowrap;
+}
+/* the format for the graph placeholder cells in timelines */
+td.timelineGraph {
+width: 20px;
+text-align: left;
+vertical-align: top;
+}
+/* timeline graph canvas */
+.tl-canvas {
+  margin: 0 6px 0 10px;
+}
+/* maximum rail spacing */
+.tl-rail {
+  width: 18px;
+}
+/* maximum spacing between merge risers and primary child risers */
+.tl-mergeoffset {
+  width: 2px;
+}
+/* adjusts the vertical position of graph nodes */
+.tl-nodemark {
+  margin-top: 5px;
+}
+/* commit node */
+.tl-node {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+/* leaf commit marker */
+.tl-node.leaf:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  background: #000;
+}
+/* selected commit node marker */
+.tl-node.sel:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  background: red;
+}
+/* arrow */
+.tl-arrow {
+  width: 0;
+  height: 0;
+  transform: scale(.999);
+  border: 0 solid transparent;
+}
+/* up arrow */
+.tl-arrow.u {
+  margin-top: -1px;
+  border-width: 0 3px;
+  border-bottom: 7px solid #000;
+}
+/* small up arrow */
+.tl-arrow.u.sm {
+  border-bottom: 5px solid #000;
+}
+/* line */
+.tl-line {
+  background: #000;
+  width: 2px;
+}
+/* merge arrow */
+.tl-arrow.merge {
+  height: 1px;
+  border-width: 2px 0;
+}
+/* left merge arrow */
+.tl-arrow.merge.l {
+  border-right: 3px solid #000;
+}
+/* right merge arrow */
+.tl-arrow.merge.r {
+  border-left: 3px solid #000;
+}
+/* merge line */
+.tl-line.merge {
+  width: 1px;
+}
+/* timewarp arrow */
+.tl-arrow.warp {
+  margin-left: 1px;
+  border-width: 3px 0;
+  border-left: 7px solid #600000;
+}
+/* timewarp line */
+.tl-line.warp {
+  background: #600000;
+}
+/* the format for the tag links */
+a.tagLink {
+
+}
+/* the format for the tag display(no history permission!) */
+span.tagDsp {
+  font-weight: bold;
+}
+/* the format for wiki errors */
+span.wikiError {
+  font-weight: bold;
+  color: red;
+}
+/* the format for fixed/canceled tags,.. */
+span.infoTagCancelled {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+/* the format for tags,.. */
+span.infoTag {
+  font-weight: bold;
+}
+/* the format for fixed/cancelled tags,.. on wiki pages */
+span.wikiTagCancelled {
+  text-decoration: line-through;
+}
+/* format for the file display table */
+table.browser {
+/* the format for wiki errors */
+  width: 100%;
+  border: 0;
+}
+/* format for cells in the file browser */
+td.browser {
+  width: 24%;
+  vertical-align: top;
+}
+/* tree-view file browser */
+.filetree {
+  margin: 1em 0;
+  line-height: 1.5;
+}
+/* tree-view top-level list */
+.filetree > ul {
+  display: inline-block;
+}
+/* tree-view lists */
+.filetree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* tree-view collapsed list */
+.filetree ul.collapsed {
+  display: none;
+}
+/* tree-view lists below the root */
+.filetree ul ul {
+  position: relative;
+  margin: 0 0 0 21px;
+}
+/* tree-view lists items */
+.filetree li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* tree-view node lines */
+.filetree li li:before {
+  content: '';
+  position: absolute;
+  top: -.8em;
+  left: -14px;
+  width: 14px;
+  height: 1.5em;
+  border-left: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+}
+/* tree-view directory lines */
+.filetree li > ul:before {
+  content: '';
+  position: absolute;
+  top: -1.5em;
+  bottom: 0;
+  left: -35px;
+  border-left: 2px solid #aaa;
+}
+/* hide lines for last-child directories */
+.filetree li.last > ul:before {
+  display: none;
+}
+/* tree-view links */
+.filetree a {
+  position: relative;
+  z-index: 1;
+  display: table-cell;
+  min-height: 16px;
+  padding-left: 21px;
+  background-image: url(data:image/gif;base64,R0lGODlhEAAQAJEAAP\/\/\/yEhIf\/\/\/wAAACH5BAEHAAIALAAAAAAQABAAAAIvlIKpxqcfmgOUvoaqDSCxrEEfF14GqFXImJZsu73wepJzVMNxrtNTj3NATMKhpwAAOw==);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+/* list of files in the 'flat-view' file browser */
+ul.browser {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+  white-space: nowrap;
+}
+/* List element in the 'flat-view' file browser for a file */
+ul.browser li.file {
+  background-image: url(data:image/gif;base64,R0lGODlhEAAQAJEAAP\/\/\/yEhIf\/\/\/wAAACH5BAEHAAIALAAAAAAQABAAAAIvlIKpxqcfmgOUvoaqDSCxrEEfF14GqFXImJZsu73wepJzVMNxrtNTj3NATMKhpwAAOw==);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+/* List element in the 'flat-view file browser for a directory */
+ul.browser li.dir {
+  background-image: url(data:image/gif;base64,R0lGODlhEAAQAJEAAP/WVCIiIv\/\/\/wAAACH5BAEHAAIALAAAAAAQABAAAAInlI9pwa3XYniCgQtkrAFfLXkiFo1jaXpo+jUs6b5Z/K4siDu5RPUFADs=);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+/* line of a file tree */
+div.filetreeline {
+  display: table;
+  width: 100%;
+  white-space: nowrap;
+}
+/* tree-view directory links */
+.filetree .dir > div.filetreeline > a {
+  background-image: url(data:image/gif;base64,R0lGODlhEAAQAJEAAP/WVCIiIv\/\/\/wAAACH5BAEHAAIALAAAAAAQABAAAAInlI9pwa3XYniCgQtkrAFfLXkiFo1jaXpo+jUs6b5Z/K4siDu5RPUFADs=);
+}
+/* Last change floating display on the right */
+div.filetreeage {
+ display: table-cell;
+ padding-left: 3em;
+ text-align: right;
+}
+/* Highlight the line of a file tree */
+div.filetreeline:hover {
+ background-color: #eee;
+}
+/* table format for login/out label/input table */
+table.login_out {
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* captcha display options */
+div.captcha {
+  text-align: center;
+  padding: 1ex;
+}
+/* format for the layout table, used for the captcha display */
+table.captcha {
+  margin: auto;
+  padding: 10px;
+  border-width: 4px;
+  border-style: double;
+  border-color: black;
+}
+/* format for the label cells in the login/out table */
+td.login_out_label {
+  text-align: center;
+}
+/* format for login error messages */
+span.loginError {
+  color: red;
+}
+/* format for leading text for notes */
+span.note {
+  font-weight: bold;
+}
+/* format for textarea labels */
+span.textareaLabel {
+  font-weight: bold;
+}
+/* format for the user setup layout table */
+table.usetupLayoutTable {
+  outline-style: none;
+  padding: 0;
+  margin: 25px;
+}
+/* format of the columns on the user setup list page */
+td.usetupColumnLayout {
+  vertical-align: top
+}
+/* format for the user list table on the user setup page */
+table.usetupUserList {
+  outline-style: double;
+  outline-width: 1px;
+  padding: 10px;
+}
+/* format for table header user in user list on user setup page */
+th.usetupListUser {
+  text-align: right;
+  padding-right: 20px;
+}
+/* format for table header capabilities in user list on user setup page */
+th.usetupListCap {
+  text-align: center;
+  padding-right: 15px;
+}
+/* format for table header contact info in user list on user setup page */
+th.usetupListCon {
+  text-align: left;
+}
+/* format for table cell user in user list on user setup page */
+td.usetupListUser {
+  text-align: right;
+  padding-right: 20px;
+  white-space:nowrap;
+}
+/* format for table cell capabilities in user list on user setup page */
+td.usetupListCap {
+  text-align: center;
+  padding-right: 15px;
+}
+/* format for table cell contact info in user list on user setup page */
+td.usetupListCon {
+  text-align: left
+}
+/* layout definition for the capabilities box on the user edit detail page */
+div.ueditCapBox {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/* format of the label cells in the detailed user edit page */
+td.usetupEditLabel {
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+}
+/* color for capabilities, inherited by nobody */
+span.ueditInheritNobody {
+  color: green;
+  padding: .2em;
+}
+/* color for capabilities, inherited by developer */
+span.ueditInheritDeveloper {
+  color: red;
+  padding: .2em;
+}
+/* color for capabilities, inherited by reader */
+span.ueditInheritReader {
+  color: black;
+  padding: .2em;
+}
+/* color for capabilities, inherited by anonymous */
+span.ueditInheritAnonymous {
+  color: blue;
+  padding: .2em;
+}
+/* format for capabilities, mentioned on the user edit page */
+span.capability {
+  font-weight: bold;
+}
+/* format for different user types, mentioned on the user edit page */
+span.usertype {
+  font-weight: bold;
+}
+/* leading text for user types, mentioned on the user edit page */
+span.usertype:before {
+  content:"'";
+}
+/* trailing text for user types, mentioned on the user edit page */
+span.usertype:after {
+  content:"'";
+}
+/* selected lines of text within a linenumbered artifact display */
+div.selectedText {
+  font-weight: bold;
+  color: blue;
+  background-color: #d5d5ff;
+  border: 1px blue solid;
+}
+/* format for missing privileges note on user setup page */
+p.missingPriv {
+ color: blue;
+}
+/* format for leading text in wikirules definitions */
+span.wikiruleHead {
+  font-weight: bold;
+}
+/* format for labels on ticket display page */
+td.tktDspLabel {
+  text-align: right;
+}
+/* format for values on ticket display page */
+td.tktDspValue {
+  text-align: left;
+  vertical-align: top;
+  background-color: #d0d0d0;
+}
+/* format for ticket error messages */
+span.tktError {
+  color: red;
+  font-weight: bold;
+}
+/* format for example tables on the report edit page */
+table.rpteditex {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Ticket report table formatting */
+table.report {
+  border-collapse:collapse;
+  border: 1px solid #999;
+  margin: 1em 0 1em 0;
+  cursor: pointer;
+}
+/* format for example table cells on the report edit page */
+td.rpteditex {
+  border-width: thin;
+  border-color: #000000;
+  border-style: solid;
+}
+/* format for user color input on check-in edit page */
+input.checkinUserColor {
+/* no special definitions, class defined, to enable color pickers, f.e.:
+**  add the color picker found at http:jscolor.com  as java script include
+**  to the header and configure the java script file with
+**   1. use as bindClass :checkinUserColor
+**   2. change the default hash adding behaviour to ON
+** or change the class defition of element identified by id="clrcust"
+** to a standard jscolor definition with java script in the footer. */
+}
+/* format for end of content area, to be used to clear page flow. */
+div.endContent {
+  clear: both;
+}
+/* format for general errors */
+p.generalError {
+  color: red;
+}
+/* format for tktsetup errors */
+p.tktsetupError {
+  color: red;
+  font-weight: bold;
+}
+/* format for xfersetup errors */
+p.xfersetupError {
+  color: red;
+  font-weight: bold;
+}
+/* format for th script errors */
+p.thmainError {
+  color: red;
+  font-weight: bold;
+}
+/* format for th script trace messages */
+span.thTrace {
+  color: red;
+}
+/* format for report configuration errors */
+p.reportError {
+  color: red;
+  font-weight: bold;
+}
+/* format for report configuration errors */
+blockquote.reportError {
+  color: red;
+  font-weight: bold;
+}
+/* format for artifact lines, no longer shunned */
+p.noMoreShun {
+  color: blue;
+}
+/* format for artifact lines beeing shunned */
+p.shunned {
+  color: blue;
+}
+/* a broken hyperlink */
+span.brokenlink {
+  color: red;
+}
+/* List of files in a timeline */
+ul.filelist {
+  margin-top: 3px;
+  line-height: 100%;
+}
+/* List of files in a timeline */
+ul.filelist li {
+  padding-top: 1px;
+}
+/* side-by-side diff display (column-based) */
+table.sbsdiffcols {
+  width: 90%;
+  border-spacing: 0;
+  font-size: xx-small;
+}
+/* sbs diff table cell */
+table.sbsdiffcols td {
+  padding: 0;
+  vertical-align: top;
+}
+/* sbs diff pre block */
+table.sbsdiffcols pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  background: inherit;
+  color: inherit;
+}
+/* diff line number column */
+div.difflncol {
+  padding-right: 1em;
+  text-align: right;
+  color: #a0a0a0;
+}
+/* diff text column */
+div.difftxtcol {
+  width: 45em;
+  overflow-x: auto;
+}
+/* diff marker column */
+div.diffmkrcol {
+  padding: 0 1em;
+}
+/* suppressed lines in a diff */
+span.diffhr {
+  display: inline-block;
+  margin: .5em 0 1em;
+  color: #0000ff;
+}
+/* line numbers in a diff */
+span.diffln {
+  color: #a0a0a0;
+}
+/* Moderation Pending message on timeline */
+span.modpending {
+  color: #b03800;
+  font-style: italic;
+}
+/* format for th1 script results */
+pre.th1result {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* format for th1 script errors */
+pre.th1error {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: red;
+}
+/* for the /reports views */
+.statistics-report-graph-line {
+  background-color: #446979;
+}
+/*  */
+.statistics-report-table-events th {
+  padding: 0 1em 0 1em;
+}
+/*  */
+.statistics-report-table-events td {
+  padding: 0.1em 1em 0.1em 1em;
+}
+/*  */
+.statistics-report-row-year {
+  text-align: left;
+}
+/* for the /stats_report views */
+.statistics-report-week-number-label {
+text-align: right;
+font-size: 0.8em;
+}
+/* for the /stats_report views */
+.statistics-report-week-of-year-list {
+font-size: 0.8em;
+}
+/* even table row color */
+tr.row0 {
+/* use default */
+}
+/* odd table row color */
+tr.row1 {
+/* Use default */
+}
+/* format for capabilities string, mentioned on the user edit page */
+#usetupEditCapability {
+font-weight: bold;
+}
+/* Class for the /admin_log table */
+table.adminLogTable {
+text-align: left;
+}
+/* Class for the /admin_log table */
+.adminLogTable .adminTime {
+text-align: left;
+vertical-align: top;
+white-space: nowrap;
+}
+/* The fileage table */
+.fileage table {
+border-spacing: 0;
+}
+/* Mouse-over effects for the file-age table */
+.fileage tr:hover {
+background-color: #eee;
+}
+/* fileage table cells */
+.fileage td {
+vertical-align: top;
+text-align: left;
+border-top: 1px solid #ddd;
+padding-top: 3px;
+}
+/* fileage first column (the age) */
+.fileage td:first-child {
+white-space: nowrap;
+}
+/* fileage second column (the filename) */
+.fileage td:nth-child(2) {
+padding-left: 1em;
+padding-right: 1em;
+}
+/* fileage third column (the check-in comment) */
+.fileage td:nth-child(3) {
+word-wrap: break-word;
+max-width: 50%;
+}
+/* The list of branches */
+.brlist table {
+border-spacing: 0;
+}
+/* Branch list table headers */
+.brlist table th {
+text-align: left;
+padding: 0px 1em 0.5ex 0px;
+}
+/* Branch list table headers */
+.brlist table td {
+padding: 0px 2em 0px 0px;
+white-space: nowrap;
+}
+/* General styles for sortable column marker */
+th.sort:after {
+margin-left: .4em;
+cursor: pointer;
+text-shadow: 0 0 0 #000; /* Makes arrow darker */
+}
+/* None sort column marker */
+th.sort.none:after {
+content: '\2666';
+}
+/* Ascending sort column marker */
+th.sort.asc:after {
+content: '\2193';
+}
+/* Descending sort column marker */
+th.sort.desc:after {
+content: '\2191';
+}
+/* Search markup */
+span.snippet>mark {
+background-color: inherit;
+font-weight: bold;
+}
+/* Container for the search terms entry box */
+div.searchForm {
+text-align: center;
+}
+/* Message explaining that there are no search results */
+p.searchEmpty {
+font-style: italic;
+}

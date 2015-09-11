@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--<base href="http://www.sqlite.org/src/wiki?name=Bug+Reports">-->
+<title>SQLite: Bug Reports</title>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="timeline.rss">
+<link rel="stylesheet" href="style-id=d42fee49.css" type="text/css" media="screen">
+</head>
+<body>
+<div class="header">
+  <div class="logo">
+    <img src="logo.gif" alt="logo" border="0">
+  </div>
+  <div class="title"><small>SQLite</small><br>Bug Reports</div>
+  <div class="status"><nobr>Not logged in</nobr><small><div id="clock">2015-08-16 22:01</div></small></div>
+</div>
+<div class="mainmenu"><a href="http://www.sqlite.org/">Home</a><a href="http://www.sqlite.org/src/tree?ci=trunk">Files</a><a href="http://www.sqlite.org/src/timeline?y=ci">Timeline</a><a href="http://www.sqlite.org/src/brlist">Branches</a><a href="http://www.sqlite.org/src/taglist">Tags</a><a href="http://www.sqlite.org/src/ticket">Tickets</a><a href="http://www.sqlite.org/src/wiki">Wiki</a><a href="https://www.sqlite.org/src/login">Login</a><a href="http://www.sqlite.org/src/sitemap">More...</a></div>
+<div class="submenu">
+<a class="label" href="http://www.sqlite.org/src/info/d9441625cf56128861e4f123d9b2fe557f3ad038">Details</a>
+<a class="label" href="http://www.sqlite.org/src/wdiff?name=Bug+Reports&a=51744">Diff</a>
+<a class="label" href="http://www.sqlite.org/src/wikihelp">Help</a>
+<a class="label" href="http://www.sqlite.org/src/whistory?name=Bug+Reports">History</a>
+<a class="label" href="http://www.sqlite.org/src/wcontent">List</a>
+<a class="label" href="http://www.sqlite.org/src/wikisrch">Search</a>
+</div>
+<div class="content">
+
+
+<script type="text/javascript">
+  document.write=function() {};
+  document.writeln=function() {};
+</script>
+
+<script>
+function gebi(x){
+if(x.substr(0,1)=='#') x = x.substr(1);
+var e = document.getElementById(x);
+if(!e) throw new Error('Expecting element with ID '+x);
+else return e;}
+</script>
+<h2>How To Report Bugs Against SQLite</h2>
+<p>We used to allow anonymous users to enter new bug reports
+directly into our bug tracking system.  However, our experience
+with this procedure was unsatisfactory.  Most of the bug reports
+we received were of low quality.  Many problems turned out to be 
+problems in the application or in the programmer's mental model
+of how SQLite works.
+Other "bug reports" were thinly veiled support requests.
+Still other reports are so poorly written that we could not figure
+out what the problem is.  There were also numerous duplicates.
+</p><p>Ideally, our bug database should be usable as an historical reference
+to track real problems with SQLite and to facilitate studies of
+bug density and software quality.  But the high volume of "noise"
+reports inhibits that goal.
+</p><p>In effort to reduce the level of background noise, we are now asking
+anonymous users to report bugs to the SQLite mailing list.  Make sure you check the <a href="http://www.sqlite.org/src/reportlist">existing bug list</a> first. To report
+a bug, please send email to 
+<a href="mailto:sqlite-users@sqlite.org">sqlite-users@sqlite.org</a>.
+Email to this list from non-members will held for review and may take
+a day or more to appear on the list.  To expedite your message,
+sign up for the mailing list at
+<a href="http://sqlite.org:8080/cgi-bin/mailman/listinfo/sqlite-users">http://sqlite.org:8080/cgi-bin/mailman/listinfo/sqlite-users</a>.
+Non-members can follow the mailing list at
+<a href="http://news.gmane.org/gmane.comp.db.sqlite.general">http://news.gmane.org/gmane.comp.db.sqlite.general</a>.
+</p><p>In order for your bug report or request for help to be clearly understood by the people that can help the most, please follow these guidelines:
+</p><ul>
+<li><a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">How to report bugs effectively</a>
+</li><li><a href="http://catb.org/~esr/faqs/smart-questions.html">How to ask smart questions</a>
+</li></ul>
+<p>The idea is that bug reports can be filtered on the mailing list and
+those that are actual new bugs can be transferred into our bug tracking
+system by registered developers.  Anonymous users can continue to
+append comments to existing bugs, just not create new bugs.
+</p><p>Thank you for your understanding and cooperation.
+
+</p></div>
+<div class="footer">
+This page was generated in about 
+0.004s by
+Fossil version 1.33 [f8e26879ac] 2015-07-27 16:16:36
+</div>
+<script>
+function updateClock(){
+  var e = document.getElementById("clock");
+  if(e){
+    var d = new Date();
+    e.innerHTML=d.toISOString().replace("T"," ").replace(/:\d\d\.\d+Z/,"");
+    setTimeout("updateClock();",(60-d.getSeconds())*1000);
+  }
+}
+updateClock();
+</script>
+
+</body></html>
